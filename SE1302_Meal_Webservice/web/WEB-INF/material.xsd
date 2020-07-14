@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns="http://xml.netbeans.org/schema/materials"
+           targetNamespace="http://xml.netbeans.org/schema/materials">
+    <xs:complexType name="attributes">
+        <xs:sequence>
+            <xs:element name="foodname">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:string">
+                        <xs:minLength value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="carbonhydrate">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="fiber">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="fat">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="protein">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="calories">
+                <xs:simpleType>
+                    <xs:restriction  base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="materials">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="material" type="attributes" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

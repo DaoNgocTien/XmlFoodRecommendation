@@ -1,0 +1,2194 @@
+<?xml version="1.0" encoding="UTF-8"?><materials xsi:schemaLocation="http://xml.netbeans.org/schema/materials material.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.netbeans.org/schema/materials">
+<material>
+<foodname>Bánh mì đen</foodname>
+<carbonhydrate>48</carbonhydrate>
+<fiber>7</fiber>
+<fat>3</fat>
+<protein>9</protein>
+<calories>250</calories>
+</material>
+<material>
+<foodname>Bánh mì</foodname>
+<carbonhydrate>48</carbonhydrate>
+<fiber>4</fiber>
+<fat>4</fat>
+<protein>1</protein>
+<calories>266</calories>
+</material>
+<material>
+<foodname>Bí xanh (baby)</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>21</calories>
+</material>
+<material>
+<foodname>Bí xanh (mùa hè)</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Bí đao</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>0</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Bông hẹ</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>30</calories>
+</material>
+<material>
+<foodname>Bưởi chùm</foodname>
+<carbonhydrate>8</carbonhydrate>
+<fiber>1.3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>33</calories>
+</material>
+<material>
+<foodname>Bưởi</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>38</calories>
+</material>
+<material>
+<foodname>Bầu</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>20</calories>
+</material>
+<material>
+<foodname>Bắp ngô ngọt</foodname>
+<carbonhydrate>19</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>86</calories>
+</material>
+<material>
+<foodname>Cam (quả)</foodname>
+<carbonhydrate>12</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>47</calories>
+</material>
+<material>
+<foodname>Chanh (quả)</foodname>
+<carbonhydrate>11</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>30</calories>
+</material>
+<material>
+<foodname>Chanh dây</foodname>
+<carbonhydrate>23</carbonhydrate>
+<fiber>10</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>97</calories>
+</material>
+<material>
+<foodname>Chuối</foodname>
+<carbonhydrate>23</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>89</calories>
+</material>
+<material>
+<foodname>Chôm chôm</foodname>
+<carbonhydrate>21</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>82</calories>
+</material>
+<material>
+<foodname>Cà chua vàng / cam</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>15</calories>
+</material>
+<material>
+<foodname>Cà chua xanh</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Cà rốt</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>41</calories>
+</material>
+<material>
+<foodname>Cà tím</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>24</calories>
+</material>
+<material>
+<foodname>Cây atisô</foodname>
+<carbonhydrate>11</carbonhydrate>
+<fiber>5</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>47</calories>
+</material>
+<material>
+<foodname>Cây bạc hà cay</foodname>
+<carbonhydrate>15</carbonhydrate>
+<fiber>8</fiber>
+<fat>1</fat>
+<protein>4</protein>
+<calories>70</calories>
+</material>
+<material>
+<foodname>Cây bạc hà lục</foodname>
+<carbonhydrate>8</carbonhydrate>
+<fiber>7</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>44</calories>
+</material>
+<material>
+<foodname>Cây đại hoàng</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>0.8</protein>
+<calories>21</calories>
+</material>
+<material>
+<foodname>Cải bắp</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>25</calories>
+</material>
+<material>
+<foodname>Cải cúc / rau tần ô</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>24</calories>
+</material>
+<material>
+<foodname>Cải ngồng/cải rổ</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>1</protein>
+<calories>22</calories>
+</material>
+<material>
+<foodname>Cải thìa</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>9</calories>
+</material>
+<material>
+<foodname>Cải thảo</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Cải xanh turnips</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>32</calories>
+</material>
+<material>
+<foodname>Cải xoong / xà lách xoong</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>11</calories>
+</material>
+<material>
+<foodname>Cải xoăn Kale</foodname>
+<carbonhydrate>10.5</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>49</calories>
+</material>
+<material>
+<foodname>Cần tây</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Củ cái trắng</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Củ diếp xoắn</foodname>
+<carbonhydrate>18</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>73</calories>
+</material>
+<material>
+<foodname>Củ dền</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>43</calories>
+</material>
+<material>
+<foodname>Củ hành</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>40</calories>
+</material>
+<material>
+<foodname>Củ nghệ (gia vị)</foodname>
+<carbonhydrate>65</carbonhydrate>
+<fiber>21</fiber>
+<fat>10</fat>
+<protein>8</protein>
+<calories>354</calories>
+</material>
+<material>
+<foodname>Củ từ</foodname>
+<carbonhydrate>28</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>118</calories>
+</material>
+<material>
+<foodname>Củ đậu</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>5</fiber>
+<fat>0</fat>
+<protein>0.8</protein>
+<calories>38</calories>
+</material>
+<material>
+<foodname>Diếp Lô Lô</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1.5</protein>
+<calories>12</calories>
+</material>
+<material>
+<foodname>Dâu tây</foodname>
+<carbonhydrate>8</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>32</calories>
+</material>
+<material>
+<foodname>Dưa chuột có vỏ</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>15</calories>
+</material>
+<material>
+<foodname>Dưa chuột gọt vỏ</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>12</calories>
+</material>
+<material>
+<foodname>Dưa cải bắp</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>25</calories>
+</material>
+<material>
+<foodname>Dưa cải bẹ</foodname>
+<carbonhydrate>4.5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>17</calories>
+</material>
+<material>
+<foodname>Dưa gang</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>28</calories>
+</material>
+<material>
+<foodname>Dưa hấu</foodname>
+<carbonhydrate>8</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>30</calories>
+</material>
+<material>
+<foodname>Dưa lưới (honeydew), dưa lê</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>36</calories>
+</material>
+<material>
+<foodname>Dưa ruột vàng (cantaloupe)</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>34</calories>
+</material>
+<material>
+<foodname>Dưa vàng (casaba)</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>28</calories>
+</material>
+<material>
+<foodname>Dọc mùng</foodname>
+<carbonhydrate>3.8</carbonhydrate>
+<fiber>0.5</fiber>
+<fat>0</fat>
+<protein>0.25</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Dứa</foodname>
+<carbonhydrate>13</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>50</calories>
+</material>
+<material>
+<foodname>Dừa, cùi</foodname>
+<carbonhydrate>15</carbonhydrate>
+<fiber>9</fiber>
+<fat>33</fat>
+<protein>3</protein>
+<calories>354</calories>
+</material>
+<material>
+<foodname>Dừa, nước</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>19</calories>
+</material>
+<material>
+<foodname>Giá đỗ</foodname>
+<carbonhydrate>7.5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>5.5</protein>
+<calories>44</calories>
+</material>
+<material>
+<foodname>Gạo nâu / gạo lức</foodname>
+<carbonhydrate>77</carbonhydrate>
+<fiber>4</fiber>
+<fat>3</fat>
+<protein>8</protein>
+<calories>370</calories>
+</material>
+<material>
+<foodname>Gạo nếp</foodname>
+<carbonhydrate>82</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>7</protein>
+<calories>370</calories>
+</material>
+<material>
+<foodname>Gạo trắng</foodname>
+<carbonhydrate>79</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>6</protein>
+<calories>360</calories>
+</material>
+<material>
+<foodname>Gừng</foodname>
+<carbonhydrate>18</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>80</calories>
+</material>
+<material>
+<foodname>Hoa chuối</foodname>
+<carbonhydrate>5.5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1.5</protein>
+<calories>20</calories>
+</material>
+<material>
+<foodname>Hành lá</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>3</calories>
+</material>
+<material>
+<foodname>Húng quế</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Hạnh nhân</foodname>
+<carbonhydrate>22</carbonhydrate>
+<fiber>12</fiber>
+<fat>49</fat>
+<protein>21</protein>
+<calories>575</calories>
+</material>
+<material>
+<foodname>Hạt hướng dương (phơi khô)</foodname>
+<carbonhydrate>20</carbonhydrate>
+<fiber>9</fiber>
+<fat>51</fat>
+<protein>21</protein>
+<calories>584</calories>
+</material>
+<material>
+<foodname>Hạt sen</foodname>
+<carbonhydrate>17</carbonhydrate>
+<fiber>0</fiber>
+<fat>1</fat>
+<protein>4</protein>
+<calories>89</calories>
+</material>
+<material>
+<foodname>Hạt điều</foodname>
+<carbonhydrate>33</carbonhydrate>
+<fiber>3</fiber>
+<fat>44</fat>
+<protein>8</protein>
+<calories>553</calories>
+</material>
+<material>
+<foodname>Hẹ lá</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Hồng xiêm / Sa bô chê</foodname>
+<carbonhydrate>20</carbonhydrate>
+<fiber>5</fiber>
+<fat>1</fat>
+<protein>0</protein>
+<calories>83</calories>
+</material>
+<material>
+<foodname>Hột é</foodname>
+<carbonhydrate>44</carbonhydrate>
+<fiber>38</fiber>
+<fat>31</fat>
+<protein>16</protein>
+<calories>490</calories>
+</material>
+<material>
+<foodname>Khoai lang</foodname>
+<carbonhydrate>20</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>86</calories>
+</material>
+<material>
+<foodname>Khoai sọ</foodname>
+<carbonhydrate>26</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>112</calories>
+</material>
+<material>
+<foodname>Khoai tây</foodname>
+<carbonhydrate>18</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>77</calories>
+</material>
+<material>
+<foodname>Khế</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>31</calories>
+</material>
+<material>
+<foodname>Khổ qua (lá)</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>0</fiber>
+<fat>1</fat>
+<protein>5</protein>
+<calories>30</calories>
+</material>
+<material>
+<foodname>Khổ qua (quả)</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>17</calories>
+</material>
+<material>
+<foodname>Kiwi</foodname>
+<carbonhydrate>15</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>1</protein>
+<calories>61</calories>
+</material>
+<material>
+<foodname>Lá diếp xoắn</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Lê</foodname>
+<carbonhydrate>11</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>0</protein>
+<calories>42</calories>
+</material>
+<material>
+<foodname>Lạc</foodname>
+<carbonhydrate>16</carbonhydrate>
+<fiber>8</fiber>
+<fat>49</fat>
+<protein>26</protein>
+<calories>567</calories>
+</material>
+<material>
+<foodname>Me chua</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>27</calories>
+</material>
+<material>
+<foodname>Mít</foodname>
+<carbonhydrate>24</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>94</calories>
+</material>
+<material>
+<foodname>Măng tre</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Măng tây</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>20</calories>
+</material>
+<material>
+<foodname>Mướp tây / đậu bắp</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>31</calories>
+</material>
+<material>
+<foodname>Mướp</foodname>
+<carbonhydrate>3.5</carbonhydrate>
+<fiber>0.5</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Mận</foodname>
+<carbonhydrate>11</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>46</calories>
+</material>
+<material>
+<foodname>Mộc nhĩ</foodname>
+<carbonhydrate>72</carbonhydrate>
+<fiber>7</fiber>
+<fat>0</fat>
+<protein>11</protein>
+<calories>312</calories>
+</material>
+<material>
+<foodname>Ngó sen</foodname>
+<carbonhydrate>17.2</carbonhydrate>
+<fiber>4.9</fiber>
+<fat>0.1</fat>
+<protein>2.6</protein>
+<calories>74</calories>
+</material>
+<material>
+<foodname>Ngải cứu (?)</foodname>
+<carbonhydrate>8</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>5</protein>
+<calories>0</calories>
+</material>
+<material>
+<foodname>Ngọn xu xu</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>1</fiber>
+<fat>0.4</fat>
+<protein>0.3</protein>
+<calories>18</calories>
+</material>
+<material>
+<foodname>Nho</foodname>
+<carbonhydrate>18</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>69</calories>
+</material>
+<material>
+<foodname>Nước cam</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>45</calories>
+</material>
+<material>
+<foodname>Nước chanh</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>0</protein>
+<calories>25</calories>
+</material>
+<material>
+<foodname>Nấm hương tươi</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>3</fiber>
+<fat>0.5</fat>
+<protein>5.5</protein>
+<calories>40</calories>
+</material>
+<material>
+<foodname>Nấm mỡ</foodname>
+<carbonhydrate>4.5</carbonhydrate>
+<fiber>1.1</fiber>
+<fat>0.3</fat>
+<protein>4</protein>
+<calories>33</calories>
+</material>
+<material>
+<foodname>Nấm rơm</foodname>
+<carbonhydrate>4.5</carbonhydrate>
+<fiber>1.1</fiber>
+<fat>0.3</fat>
+<protein>4</protein>
+<calories>31</calories>
+</material>
+<material>
+<foodname>Nấm thường tươi</foodname>
+<carbonhydrate>5.7</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>0.8</fat>
+<protein>4.6</protein>
+<calories>35</calories>
+</material>
+<material>
+<foodname>Quả bí ngô (pumpkin)</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>26</calories>
+</material>
+<material>
+<foodname>Quả bí đỏ (acorn squash)</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>40</calories>
+</material>
+<material>
+<foodname>Quả bí đỏ (butternut squash)</foodname>
+<carbonhydrate>12</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>45</calories>
+</material>
+<material>
+<foodname>Quả bơ</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>7</fiber>
+<fat>15</fat>
+<protein>2</protein>
+<calories>160</calories>
+</material>
+<material>
+<foodname>Quả hồng bì (?)</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>0</calories>
+</material>
+<material>
+<foodname>Quả hồng</foodname>
+<carbonhydrate>33</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>127</calories>
+</material>
+<material>
+<foodname>Quả hồng</foodname>
+<carbonhydrate>19</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>70</calories>
+</material>
+<material>
+<foodname>Quả lựu</foodname>
+<carbonhydrate>19</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>83</calories>
+</material>
+<material>
+<foodname>Quả na</foodname>
+<carbonhydrate>25</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>101</calories>
+</material>
+<material>
+<foodname>Quả nhãn</foodname>
+<carbonhydrate>15</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>60</calories>
+</material>
+<material>
+<foodname>Quả quýt</foodname>
+<carbonhydrate>13</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>53</calories>
+</material>
+<material>
+<foodname>Quả đào</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>39</calories>
+</material>
+<material>
+<foodname>Quất / trái tắc</foodname>
+<carbonhydrate>16</carbonhydrate>
+<fiber>6</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>71</calories>
+</material>
+<material>
+<foodname>Rau bina (bó xôi)</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Rau bí</foodname>
+<carbonhydrate>3.5</carbonhydrate>
+<fiber>1.7</fiber>
+<fat>0</fat>
+<protein>2.7</protein>
+<calories>18</calories>
+</material>
+<material>
+<foodname>Rau diếp xanh (xà lách xanh)</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>0</protein>
+<calories>15</calories>
+</material>
+<material>
+<foodname>Rau diếp đỏ (xà lách đỏ)</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Rau dền</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Rau húng</foodname>
+<carbonhydrate>5.5</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>0</fat>
+<protein>2.2</protein>
+<calories>18</calories>
+</material>
+<material>
+<foodname>Rau khoai lang</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>2.6</protein>
+<calories>22</calories>
+</material>
+<material>
+<foodname>Rau kinh giới</foodname>
+<carbonhydrate>6.5</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>0</fat>
+<protein>2.7</protein>
+<calories>23</calories>
+</material>
+<material>
+<foodname>Rau muống</foodname>
+<carbonhydrate>3.5</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>30</calories>
+</material>
+<material>
+<foodname>Rau mùi tây (ngò tây)</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>36</calories>
+</material>
+<material>
+<foodname>Rau mồng tơi</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>2.5</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Rau ngót</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>2.5</fiber>
+<fat>0</fat>
+<protein>5.3</protein>
+<calories>36</calories>
+</material>
+<material>
+<foodname>Rau ngổ</foodname>
+<carbonhydrate>4.5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1.5</protein>
+<calories>16</calories>
+</material>
+<material>
+<foodname>Rau thì là</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>43</calories>
+</material>
+<material>
+<foodname>Rau đay</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>2.8</protein>
+<calories>25</calories>
+</material>
+<material>
+<foodname>Rong biển agar khô</foodname>
+<carbonhydrate>81</carbonhydrate>
+<fiber>8</fiber>
+<fat>0</fat>
+<protein>6</protein>
+<calories>306</calories>
+</material>
+<material>
+<foodname>Rong biển irishmoss tươi</foodname>
+<carbonhydrate>12</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>49</calories>
+</material>
+<material>
+<foodname>Rong biển kelp (tảo biển) tươi</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>1</fiber>
+<fat>1</fat>
+<protein>2</protein>
+<calories>43</calories>
+</material>
+<material>
+<foodname>Rong biển laver (đỏ) tươi</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>6</protein>
+<calories>35</calories>
+</material>
+<material>
+<foodname>Rong biển xoắn ốc khô</foodname>
+<carbonhydrate>24</carbonhydrate>
+<fiber>4</fiber>
+<fat>8</fat>
+<protein>57</protein>
+<calories>290</calories>
+</material>
+<material>
+<foodname>Rong biển xoắn ốc tươi</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>6</protein>
+<calories>26</calories>
+</material>
+<material>
+<foodname>Rong biển/thạch trắng agar tươi</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>26</calories>
+</material>
+<material>
+<foodname>Su hào</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>4</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>27</calories>
+</material>
+<material>
+<foodname>Su su/Xu xu</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>19</calories>
+</material>
+<material>
+<foodname>Súp lơ</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>3</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>25</calories>
+</material>
+<material>
+<foodname>Sả</foodname>
+<carbonhydrate>25</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>1.5</protein>
+<calories>99</calories>
+</material>
+<material>
+<foodname>Sầu riêng</foodname>
+<carbonhydrate>27</carbonhydrate>
+<fiber>4</fiber>
+<fat>5</fat>
+<protein>1</protein>
+<calories>147</calories>
+</material>
+<material>
+<foodname>Thanh long</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>1</fiber>
+<fat>1.5</fat>
+<protein>2</protein>
+<calories>60</calories>
+</material>
+<material>
+<foodname>Trái cóc</foodname>
+<carbonhydrate>13</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>1</protein>
+<calories>57</calories>
+</material>
+<material>
+<foodname>Táo</foodname>
+<carbonhydrate>14</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>0</protein>
+<calories>52</calories>
+</material>
+<material>
+<foodname>Tía tô</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>0</fat>
+<protein>3</protein>
+<calories>26</calories>
+</material>
+<material>
+<foodname>Tỏi tây</foodname>
+<carbonhydrate>14</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>61</calories>
+</material>
+<material>
+<foodname>Tỏi</foodname>
+<carbonhydrate>33</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>6</protein>
+<calories>149</calories>
+</material>
+<material>
+<foodname>Vải khô</foodname>
+<carbonhydrate>71</carbonhydrate>
+<fiber>5</fiber>
+<fat>1</fat>
+<protein>4</protein>
+<calories>277</calories>
+</material>
+<material>
+<foodname>Vải</foodname>
+<carbonhydrate>17</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>66</calories>
+</material>
+<material>
+<foodname>Xoài</foodname>
+<carbonhydrate>17</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>65</calories>
+</material>
+<material>
+<foodname>Xà lách búp Mỹ</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>14</calories>
+</material>
+<material>
+<foodname>Yến mạch</foodname>
+<carbonhydrate>66</carbonhydrate>
+<fiber>11</fiber>
+<fat>7</fat>
+<protein>17</protein>
+<calories>389</calories>
+</material>
+<material>
+<foodname>Đu đủ</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>39</calories>
+</material>
+<material>
+<foodname>Đậu / đỗ trắng nhỏ</foodname>
+<carbonhydrate>62</carbonhydrate>
+<fiber>25</fiber>
+<fat>1</fat>
+<protein>21</protein>
+<calories>336</calories>
+</material>
+<material>
+<foodname>Đậu / đỗ trắng</foodname>
+<carbonhydrate>60</carbonhydrate>
+<fiber>15</fiber>
+<fat>1</fat>
+<protein>23</protein>
+<calories>333</calories>
+</material>
+<material>
+<foodname>Đậu / đỗ xanh</foodname>
+<carbonhydrate>63</carbonhydrate>
+<fiber>16</fiber>
+<fat>1</fat>
+<protein>24</protein>
+<calories>347</calories>
+</material>
+<material>
+<foodname>Đậu / đỗ đen</foodname>
+<carbonhydrate>62</carbonhydrate>
+<fiber>15</fiber>
+<fat>1</fat>
+<protein>22</protein>
+<calories>341</calories>
+</material>
+<material>
+<foodname>Đậu / đỗ đỏ</foodname>
+<carbonhydrate>61</carbonhydrate>
+<fiber>15</fiber>
+<fat>1</fat>
+<protein>23</protein>
+<calories>337</calories>
+</material>
+<material>
+<foodname>Đậu côve / đậu đũa</foodname>
+<carbonhydrate>7</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>31</calories>
+</material>
+<material>
+<foodname>Đậu nành (xanh)</foodname>
+<carbonhydrate>11</carbonhydrate>
+<fiber>4</fiber>
+<fat>7</fat>
+<protein>13</protein>
+<calories>147</calories>
+</material>
+<material>
+<foodname>Đậu phộng, lạc sống</foodname>
+<carbonhydrate>16</carbonhydrate>
+<fiber>8</fiber>
+<fat>49</fat>
+<protein>26</protein>
+<calories>567</calories>
+</material>
+<material>
+<foodname>Đậu phụ lụa mềm</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>0</fiber>
+<fat>3</fat>
+<protein>5</protein>
+<calories>55</calories>
+</material>
+<material>
+<foodname>Đậu phụ lụa rắn</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>0</fiber>
+<fat>3</fat>
+<protein>7</protein>
+<calories>62</calories>
+</material>
+<material>
+<foodname>Đậu phụ okara</foodname>
+<carbonhydrate>13</carbonhydrate>
+<fiber>0</fiber>
+<fat>2</fat>
+<protein>3</protein>
+<calories>77</calories>
+</material>
+<material>
+<foodname>Đậu phụ rán</foodname>
+<carbonhydrate>10</carbonhydrate>
+<fiber>4</fiber>
+<fat>20</fat>
+<protein>17</protein>
+<calories>271</calories>
+</material>
+<material>
+<foodname>Đậu rồng (hạt)</foodname>
+<carbonhydrate>42</carbonhydrate>
+<fiber>0</fiber>
+<fat>16</fat>
+<protein>30</protein>
+<calories>409</calories>
+</material>
+<material>
+<foodname>Đậu rồng (lá)</foodname>
+<carbonhydrate>14</carbonhydrate>
+<fiber>0</fiber>
+<fat>1</fat>
+<protein>6</protein>
+<calories>74</calories>
+</material>
+<material>
+<foodname>Ổi</foodname>
+<carbonhydrate>14</carbonhydrate>
+<fiber>5</fiber>
+<fat>1</fat>
+<protein>3</protein>
+<calories>68</calories>
+</material>
+<material>
+<foodname>Ớt phơi khô</foodname>
+<carbonhydrate>70</carbonhydrate>
+<fiber>29</fiber>
+<fat>6</fat>
+<protein>11</protein>
+<calories>324</calories>
+</material>
+<material>
+<foodname>Ớt vàng ngọt</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>27</calories>
+</material>
+<material>
+<foodname>Ớt xanh ngọt</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>20</calories>
+</material>
+<material>
+<foodname>Ớt xanh</foodname>
+<carbonhydrate>9</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>2</protein>
+<calories>40</calories>
+</material>
+<material>
+<foodname>Ớt đỏ ngọt</foodname>
+<carbonhydrate>6</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>1</protein>
+<calories>31</calories>
+</material>
+<material>
+<foodname>Ba chỉ / ba rọi (việt)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>21.5</fiber>
+<fat>0</fat>
+<protein>16.5</protein>
+<calories>260</calories>
+</material>
+<material>
+<foodname>Bắp bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2.5</fat>
+<protein>34</protein>
+<calories>201</calories>
+</material>
+<material>
+<foodname>Chim cút, thịt và mỡ</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>12</fiber>
+<fat>3</fat>
+<protein>20</protein>
+<calories>192</calories>
+</material>
+<material>
+<foodname>Chim cút, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>5</fiber>
+<fat>1</fat>
+<protein>22</protein>
+<calories>134</calories>
+</material>
+<material>
+<foodname>Chân gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>12</fiber>
+<fat>3</fat>
+<protein>18</protein>
+<calories>187</calories>
+</material>
+<material>
+<foodname>Chân gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>20</protein>
+<calories>120</calories>
+</material>
+<material>
+<foodname>Chân ếch</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>16</protein>
+<calories>73</calories>
+</material>
+<material>
+<foodname>Cua biển (xanh)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>18</protein>
+<calories>87</calories>
+</material>
+<material>
+<foodname>Cua nữ hoàng</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>19</protein>
+<calories>91</calories>
+</material>
+<material>
+<foodname>Cua vua Alaska</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>0.6</fiber>
+<fat>0</fat>
+<protein>18</protein>
+<calories>84</calories>
+</material>
+<material>
+<foodname>Cá chim</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>8</fiber>
+<fat>3</fat>
+<protein>17</protein>
+<calories>146</calories>
+</material>
+<material>
+<foodname>Cá chép</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>5.5</fiber>
+<fat>1</fat>
+<protein>18</protein>
+<calories>127</calories>
+</material>
+<material>
+<foodname>Cá cơm</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>4.8</fiber>
+<fat>1.3</fat>
+<protein>20.4</protein>
+<calories>131</calories>
+</material>
+<material>
+<foodname>Cá mè</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>1</fat>
+<protein>18</protein>
+<calories>127</calories>
+</material>
+<material>
+<foodname>Cá mú</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>19</protein>
+<calories>92</calories>
+</material>
+<material>
+<foodname>Cá nục (?)</foodname>
+<carbonhydrate>0.5</carbonhydrate>
+<fiber>7</fiber>
+<fat>0</fat>
+<protein>24</protein>
+<calories>114</calories>
+</material>
+<material>
+<foodname>Cá rô phi</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>20</protein>
+<calories>96</calories>
+</material>
+<material>
+<foodname>Cá thu thái bình dương</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>8</fiber>
+<fat>2</fat>
+<protein>20</protein>
+<calories>158</calories>
+</material>
+<material>
+<foodname>Cá thu tây ban nha</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2</fat>
+<protein>19</protein>
+<calories>139</calories>
+</material>
+<material>
+<foodname>Cá thu vua</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>2</fiber>
+<fat>0</fat>
+<protein>20</protein>
+<calories>105</calories>
+</material>
+<material>
+<foodname>Cá thu đại tây dương</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>14</fiber>
+<fat>3.5</fat>
+<protein>19</protein>
+<calories>205</calories>
+</material>
+<material>
+<foodname>Cá Tra/basa (?)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>0</fiber>
+<fat>2</fat>
+<protein>23</protein>
+<calories>125.170</calories>
+</material>
+<material>
+<foodname>Cá đối</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>19</protein>
+<calories>117</calories>
+</material>
+<material>
+<foodname>Cánh gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>16</fiber>
+<fat>4</fat>
+<protein>18</protein>
+<calories>222</calories>
+</material>
+<material>
+<foodname>Cánh gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>22</protein>
+<calories>126</calories>
+</material>
+<material>
+<foodname>Cẳng gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>9</fiber>
+<fat>2</fat>
+<protein>19</protein>
+<calories>161</calories>
+</material>
+<material>
+<foodname>Cẳng gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>21</protein>
+<calories>119</calories>
+</material>
+<material>
+<foodname>Cổ gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>26</fiber>
+<fat>7</fat>
+<protein>14</protein>
+<calories>297</calories>
+</material>
+<material>
+<foodname>Cổ gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>9</fiber>
+<fat>2</fat>
+<protein>18</protein>
+<calories>154</calories>
+</material>
+<material>
+<foodname>Da gà</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>32</fiber>
+<fat>9</fat>
+<protein>13</protein>
+<calories>349</calories>
+</material>
+<material>
+<foodname>Dạ dày bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>1</fat>
+<protein>12.5</protein>
+<calories>85</calories>
+</material>
+<material>
+<foodname>Dạ dày lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>10</fiber>
+<fat>4</fat>
+<protein>17</protein>
+<calories>159</calories>
+</material>
+<material>
+<foodname>Gan bò</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>20</protein>
+<calories>135</calories>
+</material>
+<material>
+<foodname>Gan gà</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>5</fiber>
+<fat>2</fat>
+<protein>17</protein>
+<calories>116</calories>
+</material>
+<material>
+<foodname>Gan lợn</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>21</protein>
+<calories>134</calories>
+</material>
+<material>
+<foodname>Gan vịt</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>5</fiber>
+<fat>1</fat>
+<protein>19</protein>
+<calories>136</calories>
+</material>
+<material>
+<foodname>Hến</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>2</fiber>
+<fat>0.7</fat>
+<protein>12</protein>
+<calories>86</calories>
+</material>
+<material>
+<foodname>Lá lách</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>18</protein>
+<calories>100</calories>
+</material>
+<material>
+<foodname>Lưng gà, thịt và mỡ</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>29</fiber>
+<fat>8</fat>
+<protein>14</protein>
+<calories>319</calories>
+</material>
+<material>
+<foodname>Lưng gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2</fat>
+<protein>20</protein>
+<calories>137</calories>
+</material>
+<material>
+<foodname>Lươn, cá chình</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>12</fiber>
+<fat>2.5</fat>
+<protein>19</protein>
+<calories>184</calories>
+</material>
+<material>
+<foodname>Lưỡi bò</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>16</fiber>
+<fat>7</fat>
+<protein>15</protein>
+<calories>224</calories>
+</material>
+<material>
+<foodname>Lưỡi lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>17</fiber>
+<fat>6</fat>
+<protein>16</protein>
+<calories>225</calories>
+</material>
+<material>
+<foodname>Móng lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>13</fiber>
+<fat>4</fat>
+<protein>23</protein>
+<calories>212</calories>
+</material>
+<material>
+<foodname>Mỡ bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>94</fiber>
+<fat>52</fat>
+<protein>2</protein>
+<calories>854</calories>
+</material>
+<material>
+<foodname>Mỡ lá lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>94</fiber>
+<fat>45</fat>
+<protein>2</protein>
+<calories>857</calories>
+</material>
+<material>
+<foodname>Mực nang</foodname>
+<carbonhydrate>1.2</carbonhydrate>
+<fiber>1.2</fiber>
+<fat>0</fat>
+<protein>16.5</protein>
+<calories>79</calories>
+</material>
+<material>
+<foodname>Mực ống</foodname>
+<carbonhydrate>3.5</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>14</protein>
+<calories>93</calories>
+</material>
+<material>
+<foodname>Nghêu</foodname>
+<carbonhydrate>3</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>13</protein>
+<calories>74</calories>
+</material>
+<material>
+<foodname>Phổi bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>16</protein>
+<calories>92</calories>
+</material>
+<material>
+<foodname>Phổi lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>14</protein>
+<calories>85</calories>
+</material>
+<material>
+<foodname>Ruột non</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>17</fiber>
+<fat>8</fat>
+<protein>8</protein>
+<calories>182</calories>
+</material>
+<material>
+<foodname>Sò</foodname>
+<carbonhydrate>5</carbonhydrate>
+<fiber>0</fiber>
+<fat>1</fat>
+<protein>13</protein>
+<calories>79</calories>
+</material>
+<material>
+<foodname>Sườn bò (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>26</fiber>
+<fat>11</fat>
+<protein>17</protein>
+<calories>306</calories>
+</material>
+<material>
+<foodname>Tai lợn</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>15</fiber>
+<fat>5</fat>
+<protein>22</protein>
+<calories>234</calories>
+</material>
+<material>
+<foodname>Thận bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>18</protein>
+<calories>103</calories>
+</material>
+<material>
+<foodname>Thận lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3</fiber>
+<fat>1</fat>
+<protein>16</protein>
+<calories>100</calories>
+</material>
+<material>
+<foodname>Thắt thăn lợn (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>13</fiber>
+<fat>4</fat>
+<protein>20</protein>
+<calories>198</calories>
+</material>
+<material>
+<foodname>Thắt thăn lợn (nạc)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2</fat>
+<protein>21</protein>
+<calories>143</calories>
+</material>
+<material>
+<foodname>Thịt bò tươi (cả con – cả nạc lẫn mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>22.5</fiber>
+<fat>9</fat>
+<protein>17.5</protein>
+<calories>278</calories>
+</material>
+<material>
+<foodname>Thịt chân lợn (nạc và mỡ – phần phía hông)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>16</fiber>
+<fat>5.5</fat>
+<protein>19</protein>
+<calories>222</calories>
+</material>
+<material>
+<foodname>Thịt chân lợn (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>19</fiber>
+<fat>7</fat>
+<protein>17.5</protein>
+<calories>245</calories>
+</material>
+<material>
+<foodname>Thịt chân lợn (nạc – phần phía hông)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>5</fiber>
+<fat>2</fat>
+<protein>21</protein>
+<calories>137</calories>
+</material>
+<material>
+<foodname>Thịt chân lợn (nạc)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>5.5</fiber>
+<fat>2</fat>
+<protein>20.5</protein>
+<calories>136</calories>
+</material>
+<material>
+<foodname>Thịt dê</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>2</fiber>
+<fat>1</fat>
+<protein>21</protein>
+<calories>109</calories>
+</material>
+<material>
+<foodname>Thịt gà xay</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>8</fiber>
+<fat>2</fat>
+<protein>17</protein>
+<calories>143</calories>
+</material>
+<material>
+<foodname>Thịt má lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>70</fiber>
+<fat>25</fat>
+<protein>6</protein>
+<calories>655</calories>
+</material>
+<material>
+<foodname>Thịt sườn (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>23</fiber>
+<fat>7.5</fat>
+<protein>15.5</protein>
+<calories>277</calories>
+</material>
+<material>
+<foodname>Thịt thăn bò (phần nạc)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2</fat>
+<protein>21</protein>
+<calories>142</calories>
+</material>
+<material>
+<foodname>Thịt trâu</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>20</protein>
+<calories>99</calories>
+</material>
+<material>
+<foodname>Thịt vai (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>18</fiber>
+<fat>6</fat>
+<protein>17</protein>
+<calories>236</calories>
+</material>
+<material>
+<foodname>Thịt vai (nạc)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>7</fiber>
+<fat>2</fat>
+<protein>20</protein>
+<calories>148</calories>
+</material>
+<material>
+<foodname>Thịt ức bò (nạc và mỡ)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>19</fiber>
+<fat>7.5</fat>
+<protein>18.5</protein>
+<calories>251</calories>
+</material>
+<material>
+<foodname>Thịt ức bò (phần nạc)</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>7</fiber>
+<fat>2.5</fat>
+<protein>21</protein>
+<calories>155</calories>
+</material>
+<material>
+<foodname>Tim bò</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>3.5</fiber>
+<fat>1.7</fat>
+<protein>18</protein>
+<calories>112</calories>
+</material>
+<material>
+<foodname>Tim gà</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>9</fiber>
+<fat>3</fat>
+<protein>16</protein>
+<calories>153</calories>
+</material>
+<material>
+<foodname>Tim lợn</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>17</protein>
+<calories>118</calories>
+</material>
+<material>
+<foodname>Trứng chim cút sống</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>11</fiber>
+<fat>4</fat>
+<protein>13</protein>
+<calories>158</calories>
+</material>
+<material>
+<foodname>Trứng cá</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>18</fiber>
+<fat>4</fat>
+<protein>25</protein>
+<calories>252</calories>
+</material>
+<material>
+<foodname>Trứng gà bác</foodname>
+<carbonhydrate>2</carbonhydrate>
+<fiber>12</fiber>
+<fat>4</fat>
+<protein>11</protein>
+<calories>167</calories>
+</material>
+<material>
+<foodname>Trứng gà kho, rim</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>10</fiber>
+<fat>3</fat>
+<protein>13</protein>
+<calories>142</calories>
+</material>
+<material>
+<foodname>Trứng gà luộc</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>11</fiber>
+<fat>3</fat>
+<protein>13</protein>
+<calories>155</calories>
+</material>
+<material>
+<foodname>Trứng gà omelet</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>12</fiber>
+<fat>3</fat>
+<protein>11</protein>
+<calories>157</calories>
+</material>
+<material>
+<foodname>Trứng gà rán</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>15</fiber>
+<fat>4</fat>
+<protein>14</protein>
+<calories>196</calories>
+</material>
+<material>
+<foodname>Trứng gà sống, lòng trắng</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>10</protein>
+<calories>47</calories>
+</material>
+<material>
+<foodname>Trứng gà sống, lòng đỏ</foodname>
+<carbonhydrate>4</carbonhydrate>
+<fiber>27</fiber>
+<fat>10</fat>
+<protein>16</protein>
+<calories>317</calories>
+</material>
+<material>
+<foodname>Trứng gà sống</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>10</fiber>
+<fat>3</fat>
+<protein>13</protein>
+<calories>143</calories>
+</material>
+<material>
+<foodname>Trứng gà tây</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>12</fiber>
+<fat>4</fat>
+<protein>12</protein>
+<calories>171</calories>
+</material>
+<material>
+<foodname>Trứng ngỗng sống</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>13</fiber>
+<fat>4</fat>
+<protein>14</protein>
+<calories>185</calories>
+</material>
+<material>
+<foodname>Trứng vịt lộn</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>12</fiber>
+<fat>0</fat>
+<protein>17</protein>
+<calories>226</calories>
+</material>
+<material>
+<foodname>Trứng vịt sống</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>14</fiber>
+<fat>4</fat>
+<protein>13</protein>
+<calories>185</calories>
+</material>
+<material>
+<foodname>Tôm hùm gai</foodname>
+<carbonhydrate>2.4</carbonhydrate>
+<fiber>1.5</fiber>
+<fat>0</fat>
+<protein>20.5</protein>
+<calories>112</calories>
+</material>
+<material>
+<foodname>Tôm hùm phương bắc</foodname>
+<carbonhydrate>0.7</carbonhydrate>
+<fiber>0.7</fiber>
+<fat>0</fat>
+<protein>19</protein>
+<calories>90</calories>
+</material>
+<material>
+<foodname>Tôm</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>16</protein>
+<calories>100</calories>
+</material>
+<material>
+<foodname>Vịt hoang dã, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>15</fiber>
+<fat>5</fat>
+<protein>17</protein>
+<calories>211</calories>
+</material>
+<material>
+<foodname>Vịt nuôi, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>39</fiber>
+<fat>13</fat>
+<protein>11</protein>
+<calories>404</calories>
+</material>
+<material>
+<foodname>Vịt nuôi, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>6</fiber>
+<fat>2</fat>
+<protein>18</protein>
+<calories>132</calories>
+</material>
+<material>
+<foodname>Óc bò</foodname>
+<carbonhydrate>1</carbonhydrate>
+<fiber>11</fiber>
+<fat>2.5</fat>
+<protein>11</protein>
+<calories>143</calories>
+</material>
+<material>
+<foodname>Óc lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>9</fiber>
+<fat>2</fat>
+<protein>10</protein>
+<calories>127</calories>
+</material>
+<material>
+<foodname>Đuôi lợn</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>33</fiber>
+<fat>12</fat>
+<protein>18</protein>
+<calories>378</calories>
+</material>
+<material>
+<foodname>Đùi gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>15</fiber>
+<fat>4</fat>
+<protein>17</protein>
+<calories>211</calories>
+</material>
+<material>
+<foodname>Đùi gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>4</fiber>
+<fat>1</fat>
+<protein>20</protein>
+<calories>119</calories>
+</material>
+<material>
+<foodname>Ốc</foodname>
+<carbonhydrate>3.5</carbonhydrate>
+<fiber>0</fiber>
+<fat>0</fat>
+<protein>18</protein>
+<calories>89</calories>
+</material>
+<material>
+<foodname>Ức gà, thịt và da</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>9</fiber>
+<fat>3</fat>
+<protein>21</protein>
+<calories>172</calories>
+</material>
+<material>
+<foodname>Ức gà, thịt</foodname>
+<carbonhydrate>0</carbonhydrate>
+<fiber>1</fiber>
+<fat>0</fat>
+<protein>23</protein>
+<calories>110</calories>
+</material>
+</materials>

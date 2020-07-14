@@ -1,0 +1,2469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<materials>
+    <material>
+        <calories>250.0</calories>
+        <carbonhydrate>48.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Bánh mì ?en</foodname>
+        <id>549</id>
+        <protein>9.0</protein>
+    </material>
+    <material>
+        <calories>266.0</calories>
+        <carbonhydrate>48.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Bánh mì</foodname>
+        <id>550</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>21.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Bí xanh (baby)</foodname>
+        <id>551</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Bí xanh (mùa hè)</foodname>
+        <id>552</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Bí ?ao</foodname>
+        <id>553</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>30.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Bông h?</foodname>
+        <id>554</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>33.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>B??i chùm</foodname>
+        <id>555</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>38.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>B??i</foodname>
+        <id>556</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>20.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>B?u</foodname>
+        <id>557</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>86.0</calories>
+        <carbonhydrate>19.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>B?p ngô ng?t</foodname>
+        <id>558</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>47.0</calories>
+        <carbonhydrate>12.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Cam (qu?)</foodname>
+        <id>559</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>30.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Chanh (qu?)</foodname>
+        <id>560</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>97.0</calories>
+        <carbonhydrate>23.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>10.0</fiber>
+        <foodname>Chanh dây</foodname>
+        <id>561</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>89.0</calories>
+        <carbonhydrate>23.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Chu?i</foodname>
+        <id>562</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>82.0</calories>
+        <carbonhydrate>21.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Chôm chôm</foodname>
+        <id>563</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>15.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Cà chua vàng / cam</foodname>
+        <id>564</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Cà chua xanh</foodname>
+        <id>565</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>41.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Cà r?t</foodname>
+        <id>566</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>24.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Cà tím</foodname>
+        <id>567</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>47.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Cây atisô</foodname>
+        <id>568</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>70.0</calories>
+        <carbonhydrate>15.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>Cây b?c hà cay</foodname>
+        <id>569</id>
+        <protein>4.0</protein>
+    </material>
+    <material>
+        <calories>44.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Cây b?c hà l?c</foodname>
+        <id>570</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>21.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Cây ??i hoàng</foodname>
+        <id>571</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>25.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C?i b?p</foodname>
+        <id>572</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>24.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C?i cúc / rau t?n ô</foodname>
+        <id>573</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>22.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C?i ng?ng/c?i r?</foodname>
+        <id>574</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>9.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>C?i thìa</foodname>
+        <id>575</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>C?i th?o</foodname>
+        <id>576</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>32.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C?i xanh turnips</foodname>
+        <id>577</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>11.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>C?i xoong / xà lách xoong</foodname>
+        <id>578</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>49.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>C?i xo?n Kale</foodname>
+        <id>579</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>C?n tây</foodname>
+        <id>580</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>C? cái tr?ng</foodname>
+        <id>581</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>73.0</calories>
+        <carbonhydrate>18.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>C? di?p xo?n</foodname>
+        <id>582</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>43.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C? d?n</foodname>
+        <id>583</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>40.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>C? hành</foodname>
+        <id>584</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>354.0</calories>
+        <carbonhydrate>65.0</carbonhydrate>
+        <fat>10.0</fat>
+        <fiber>21.0</fiber>
+        <foodname>C? ngh? (gia v?)</foodname>
+        <id>585</id>
+        <protein>8.0</protein>
+    </material>
+    <material>
+        <calories>118.0</calories>
+        <carbonhydrate>28.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>C? t?</foodname>
+        <id>586</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>38.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>C? ??u</foodname>
+        <id>587</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>12.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Di?p Lô Lô</foodname>
+        <id>588</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>32.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Dâu tây</foodname>
+        <id>589</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>15.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>D?a chu?t có v?</foodname>
+        <id>590</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>12.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a chu?t g?t v?</foodname>
+        <id>591</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>25.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>D?a c?i b?p</foodname>
+        <id>592</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>17.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>D?a c?i b?</foodname>
+        <id>593</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>28.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a gang</foodname>
+        <id>594</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>30.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>D?a h?u</foodname>
+        <id>595</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>36.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a l??i (honeydew), d?a lê</foodname>
+        <id>596</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>34.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a ru?t vàng (cantaloupe)</foodname>
+        <id>597</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>28.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a vàng (casaba)</foodname>
+        <id>598</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?c mùng</foodname>
+        <id>599</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>50.0</calories>
+        <carbonhydrate>13.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a</foodname>
+        <id>600</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>354.0</calories>
+        <carbonhydrate>15.0</carbonhydrate>
+        <fat>33.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>D?a, cùi</foodname>
+        <id>601</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>19.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>D?a, n??c</foodname>
+        <id>602</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>44.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Giá ??</foodname>
+        <id>603</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>370.0</calories>
+        <carbonhydrate>77.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>G?o nâu / g?o l?c</foodname>
+        <id>604</id>
+        <protein>8.0</protein>
+    </material>
+    <material>
+        <calories>370.0</calories>
+        <carbonhydrate>82.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>G?o n?p</foodname>
+        <id>605</id>
+        <protein>7.0</protein>
+    </material>
+    <material>
+        <calories>360.0</calories>
+        <carbonhydrate>79.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>G?o tr?ng</foodname>
+        <id>606</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>80.0</calories>
+        <carbonhydrate>18.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>G?ng</foodname>
+        <id>607</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>20.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Hoa chu?i</foodname>
+        <id>608</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>3.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Hành lá</foodname>
+        <id>609</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Húng qu?</foodname>
+        <id>610</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>575.0</calories>
+        <carbonhydrate>22.0</carbonhydrate>
+        <fat>49.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>H?nh nhân</foodname>
+        <id>611</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>584.0</calories>
+        <carbonhydrate>20.0</carbonhydrate>
+        <fat>51.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>H?t h??ng d??ng (ph?i khô)</foodname>
+        <id>612</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>89.0</calories>
+        <carbonhydrate>17.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>H?t sen</foodname>
+        <id>613</id>
+        <protein>4.0</protein>
+    </material>
+    <material>
+        <calories>553.0</calories>
+        <carbonhydrate>33.0</carbonhydrate>
+        <fat>44.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>H?t ?i?u</foodname>
+        <id>614</id>
+        <protein>8.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>H? lá</foodname>
+        <id>615</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>83.0</calories>
+        <carbonhydrate>20.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>H?ng xiêm / Sa bô chê</foodname>
+        <id>616</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>490.0</calories>
+        <carbonhydrate>44.0</carbonhydrate>
+        <fat>31.0</fat>
+        <fiber>38.0</fiber>
+        <foodname>H?t é</foodname>
+        <id>617</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>86.0</calories>
+        <carbonhydrate>20.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Khoai lang</foodname>
+        <id>618</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>112.0</calories>
+        <carbonhydrate>26.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Khoai s?</foodname>
+        <id>619</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>77.0</calories>
+        <carbonhydrate>18.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Khoai tây</foodname>
+        <id>620</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>31.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Kh?</foodname>
+        <id>621</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>30.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Kh? qua (lá)</foodname>
+        <id>622</id>
+        <protein>5.0</protein>
+    </material>
+    <material>
+        <calories>17.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Kh? qua (qu?)</foodname>
+        <id>623</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>61.0</calories>
+        <carbonhydrate>15.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Kiwi</foodname>
+        <id>624</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Lá di?p xo?n</foodname>
+        <id>625</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>42.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Lê</foodname>
+        <id>626</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>567.0</calories>
+        <carbonhydrate>16.0</carbonhydrate>
+        <fat>49.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>L?c</foodname>
+        <id>627</id>
+        <protein>26.0</protein>
+    </material>
+    <material>
+        <calories>27.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Me chua</foodname>
+        <id>628</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>94.0</calories>
+        <carbonhydrate>24.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Mít</foodname>
+        <id>629</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>M?ng tre</foodname>
+        <id>630</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>20.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>M?ng tây</foodname>
+        <id>631</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>31.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>M??p tây / ??u b?p</foodname>
+        <id>632</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>M??p</foodname>
+        <id>633</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>46.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>M?n</foodname>
+        <id>634</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>312.0</calories>
+        <carbonhydrate>72.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>M?c nh?</foodname>
+        <id>635</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>74.0</calories>
+        <carbonhydrate>17.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Ngó sen</foodname>
+        <id>636</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>0.0</calories>
+        <carbonhydrate>8.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Ng?i c?u (?)</foodname>
+        <id>637</id>
+        <protein>5.0</protein>
+    </material>
+    <material>
+        <calories>18.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Ng?n xu xu</foodname>
+        <id>638</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>69.0</calories>
+        <carbonhydrate>18.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Nho</foodname>
+        <id>639</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>45.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>N??c cam</foodname>
+        <id>640</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>25.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>N??c chanh</foodname>
+        <id>641</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>40.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>N?m h??ng t??i</foodname>
+        <id>642</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>33.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>N?m m?</foodname>
+        <id>643</id>
+        <protein>4.0</protein>
+    </material>
+    <material>
+        <calories>31.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>N?m r?m</foodname>
+        <id>644</id>
+        <protein>4.0</protein>
+    </material>
+    <material>
+        <calories>35.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>N?m th??ng t??i</foodname>
+        <id>645</id>
+        <protein>5.0</protein>
+    </material>
+    <material>
+        <calories>26.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Qu? bí ngô (pumpkin)</foodname>
+        <id>646</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>40.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Qu? bí ?? (acorn squash)</foodname>
+        <id>647</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>45.0</calories>
+        <carbonhydrate>12.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Qu? bí ?? (butternut squash)</foodname>
+        <id>648</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>160.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>15.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Qu? b?</foodname>
+        <id>649</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>0.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Qu? h?ng bì (?)</foodname>
+        <id>650</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>127.0</calories>
+        <carbonhydrate>33.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Qu? h?ng</foodname>
+        <id>651</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>70.0</calories>
+        <carbonhydrate>19.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Qu? h?ng</foodname>
+        <id>652</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>83.0</calories>
+        <carbonhydrate>19.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Qu? l?u</foodname>
+        <id>653</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>101.0</calories>
+        <carbonhydrate>25.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Qu? na</foodname>
+        <id>654</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>60.0</calories>
+        <carbonhydrate>15.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Qu? nhãn</foodname>
+        <id>655</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>53.0</calories>
+        <carbonhydrate>13.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Qu? quýt</foodname>
+        <id>656</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>39.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Qu? ?ào</foodname>
+        <id>657</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>71.0</calories>
+        <carbonhydrate>16.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Qu?t / trái t?c</foodname>
+        <id>658</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau bina (bó xôi)</foodname>
+        <id>659</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>18.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau bí</foodname>
+        <id>660</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>15.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Rau di?p xanh (xà lách xanh)</foodname>
+        <id>661</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Rau di?p ?? (xà lách ??)</foodname>
+        <id>662</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Rau d?n</foodname>
+        <id>663</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>18.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Rau húng</foodname>
+        <id>664</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>22.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau khoai lang</foodname>
+        <id>665</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>23.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Rau kinh gi?i</foodname>
+        <id>666</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>30.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Rau mu?ng</foodname>
+        <id>667</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>36.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Rau mùi tây (ngò tây)</foodname>
+        <id>668</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Rau m?ng t?i</foodname>
+        <id>669</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>36.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Rau ngót</foodname>
+        <id>670</id>
+        <protein>5.0</protein>
+    </material>
+    <material>
+        <calories>16.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau ng?</foodname>
+        <id>671</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>43.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau thì là</foodname>
+        <id>672</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>25.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Rau ?ay</foodname>
+        <id>673</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>306.0</calories>
+        <carbonhydrate>81.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>Rong bi?n agar khô</foodname>
+        <id>674</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>49.0</calories>
+        <carbonhydrate>12.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Rong bi?n irishmoss t??i</foodname>
+        <id>675</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>43.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Rong bi?n kelp (t?o bi?n) t??i</foodname>
+        <id>676</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>35.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Rong bi?n laver (??) t??i</foodname>
+        <id>677</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>290.0</calories>
+        <carbonhydrate>24.0</carbonhydrate>
+        <fat>8.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Rong bi?n xo?n ?c khô</foodname>
+        <id>678</id>
+        <protein>57.0</protein>
+    </material>
+    <material>
+        <calories>26.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Rong bi?n xo?n ?c t??i</foodname>
+        <id>679</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>26.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Rong bi?n/th?ch tr?ng agar t??i</foodname>
+        <id>680</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>27.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Su hào</foodname>
+        <id>681</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>19.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Su su/Xu xu</foodname>
+        <id>682</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>25.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Súp l?</foodname>
+        <id>683</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>99.0</calories>
+        <carbonhydrate>25.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>S?</foodname>
+        <id>684</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>147.0</calories>
+        <carbonhydrate>27.0</carbonhydrate>
+        <fat>5.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>S?u riêng</foodname>
+        <id>685</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>60.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Thanh long</foodname>
+        <id>686</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>57.0</calories>
+        <carbonhydrate>13.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Trái cóc</foodname>
+        <id>687</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>52.0</calories>
+        <carbonhydrate>14.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Táo</foodname>
+        <id>688</id>
+        <protein>0.0</protein>
+    </material>
+    <material>
+        <calories>26.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Tía tô</foodname>
+        <id>689</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>61.0</calories>
+        <carbonhydrate>14.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>T?i tây</foodname>
+        <id>690</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>149.0</calories>
+        <carbonhydrate>33.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>T?i</foodname>
+        <id>691</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>277.0</calories>
+        <carbonhydrate>71.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>V?i khô</foodname>
+        <id>692</id>
+        <protein>4.0</protein>
+    </material>
+    <material>
+        <calories>66.0</calories>
+        <carbonhydrate>17.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>V?i</foodname>
+        <id>693</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>65.0</calories>
+        <carbonhydrate>17.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Xoài</foodname>
+        <id>694</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>14.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Xà lách búp M?</foodname>
+        <id>695</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>389.0</calories>
+        <carbonhydrate>66.0</carbonhydrate>
+        <fat>7.0</fat>
+        <fiber>11.0</fiber>
+        <foodname>Y?n m?ch</foodname>
+        <id>696</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>39.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>?u ??</foodname>
+        <id>697</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>336.0</calories>
+        <carbonhydrate>62.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>25.0</fiber>
+        <foodname>??u / ?? tr?ng nh?</foodname>
+        <id>698</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>333.0</calories>
+        <carbonhydrate>60.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>??u / ?? tr?ng</foodname>
+        <id>699</id>
+        <protein>23.0</protein>
+    </material>
+    <material>
+        <calories>347.0</calories>
+        <carbonhydrate>63.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>16.0</fiber>
+        <foodname>??u / ?? xanh</foodname>
+        <id>700</id>
+        <protein>24.0</protein>
+    </material>
+    <material>
+        <calories>341.0</calories>
+        <carbonhydrate>62.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>??u / ?? ?en</foodname>
+        <id>701</id>
+        <protein>22.0</protein>
+    </material>
+    <material>
+        <calories>337.0</calories>
+        <carbonhydrate>61.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>??u / ?? ??</foodname>
+        <id>702</id>
+        <protein>23.0</protein>
+    </material>
+    <material>
+        <calories>31.0</calories>
+        <carbonhydrate>7.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>??u côve / ??u ??a</foodname>
+        <id>703</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>147.0</calories>
+        <carbonhydrate>11.0</carbonhydrate>
+        <fat>7.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>??u nành (xanh)</foodname>
+        <id>704</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>567.0</calories>
+        <carbonhydrate>16.0</carbonhydrate>
+        <fat>49.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>??u ph?ng, l?c s?ng</foodname>
+        <id>705</id>
+        <protein>26.0</protein>
+    </material>
+    <material>
+        <calories>55.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>??u ph? l?a m?m</foodname>
+        <id>706</id>
+        <protein>5.0</protein>
+    </material>
+    <material>
+        <calories>62.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>??u ph? l?a r?n</foodname>
+        <id>707</id>
+        <protein>7.0</protein>
+    </material>
+    <material>
+        <calories>77.0</calories>
+        <carbonhydrate>13.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>??u ph? okara</foodname>
+        <id>708</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>271.0</calories>
+        <carbonhydrate>10.0</carbonhydrate>
+        <fat>20.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>??u ph? rán</foodname>
+        <id>709</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>409.0</calories>
+        <carbonhydrate>42.0</carbonhydrate>
+        <fat>16.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>??u r?ng (h?t)</foodname>
+        <id>710</id>
+        <protein>30.0</protein>
+    </material>
+    <material>
+        <calories>74.0</calories>
+        <carbonhydrate>14.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>??u r?ng (lá)</foodname>
+        <id>711</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>68.0</calories>
+        <carbonhydrate>14.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>?i</foodname>
+        <id>712</id>
+        <protein>3.0</protein>
+    </material>
+    <material>
+        <calories>324.0</calories>
+        <carbonhydrate>70.0</carbonhydrate>
+        <fat>6.0</fat>
+        <fiber>29.0</fiber>
+        <foodname>?t ph?i khô</foodname>
+        <id>713</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>27.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>?t vàng ng?t</foodname>
+        <id>714</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>20.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>?t xanh ng?t</foodname>
+        <id>715</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>40.0</calories>
+        <carbonhydrate>9.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>?t xanh</foodname>
+        <id>716</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>31.0</calories>
+        <carbonhydrate>6.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>?t ?? ng?t</foodname>
+        <id>717</id>
+        <protein>1.0</protein>
+    </material>
+    <material>
+        <calories>260.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>22.0</fiber>
+        <foodname>Ba ch? / ba r?i (vi?t)</foodname>
+        <id>718</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>201.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>B?p bò</foodname>
+        <id>719</id>
+        <protein>34.0</protein>
+    </material>
+    <material>
+        <calories>192.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Chim cút, th?t và m?</foodname>
+        <id>720</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>134.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Chim cút, th?t</foodname>
+        <id>721</id>
+        <protein>22.0</protein>
+    </material>
+    <material>
+        <calories>187.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Chân gà, th?t và da</foodname>
+        <id>722</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>120.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Chân gà, th?t</foodname>
+        <id>723</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>73.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Chân ?ch</foodname>
+        <id>724</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>87.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Cua bi?n (xanh)</foodname>
+        <id>725</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>91.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Cua n? hoàng</foodname>
+        <id>726</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>84.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Cua vua Alaska</foodname>
+        <id>727</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>146.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>Cá chim</foodname>
+        <id>728</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>127.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Cá chép</foodname>
+        <id>729</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>131.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Cá c?m</foodname>
+        <id>730</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>127.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Cá mè</foodname>
+        <id>731</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>92.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Cá mú</foodname>
+        <id>732</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>114.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Cá n?c (?)</foodname>
+        <id>733</id>
+        <protein>24.0</protein>
+    </material>
+    <material>
+        <calories>96.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Cá rô phi</foodname>
+        <id>734</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>158.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>Cá thu thái bình d??ng</foodname>
+        <id>735</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>139.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Cá thu tây ban nha</foodname>
+        <id>736</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>105.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Cá thu vua</foodname>
+        <id>737</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>205.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>14.0</fiber>
+        <foodname>Cá thu ??i tây d??ng</foodname>
+        <id>738</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>125.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Cá Tra/basa (?)</foodname>
+        <id>739</id>
+        <protein>23.0</protein>
+    </material>
+    <material>
+        <calories>117.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Cá ??i</foodname>
+        <id>740</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>222.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>16.0</fiber>
+        <foodname>Cánh gà, th?t và da</foodname>
+        <id>741</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>126.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Cánh gà, th?t</foodname>
+        <id>742</id>
+        <protein>22.0</protein>
+    </material>
+    <material>
+        <calories>161.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>C?ng gà, th?t và da</foodname>
+        <id>743</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>119.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>C?ng gà, th?t</foodname>
+        <id>744</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>297.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>7.0</fat>
+        <fiber>26.0</fiber>
+        <foodname>C? gà, th?t và da</foodname>
+        <id>745</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>154.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>C? gà, th?t</foodname>
+        <id>746</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>349.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>9.0</fat>
+        <fiber>32.0</fiber>
+        <foodname>Da gà</foodname>
+        <id>747</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>85.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>D? dày bò</foodname>
+        <id>748</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>159.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>10.0</fiber>
+        <foodname>D? dày l?n</foodname>
+        <id>749</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>135.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Gan bò</foodname>
+        <id>750</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>116.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Gan gà</foodname>
+        <id>751</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>134.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Gan l?n</foodname>
+        <id>752</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>136.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Gan v?t</foodname>
+        <id>753</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>86.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>H?n</foodname>
+        <id>754</id>
+        <protein>12.0</protein>
+    </material>
+    <material>
+        <calories>100.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Lá lách</foodname>
+        <id>755</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>319.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>8.0</fat>
+        <fiber>29.0</fiber>
+        <foodname>L?ng gà, th?t và m?</foodname>
+        <id>756</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>137.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>L?ng gà, th?t</foodname>
+        <id>757</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>184.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>L??n, cá chình</foodname>
+        <id>758</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>224.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>7.0</fat>
+        <fiber>16.0</fiber>
+        <foodname>L??i bò</foodname>
+        <id>759</id>
+        <protein>15.0</protein>
+    </material>
+    <material>
+        <calories>225.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>6.0</fat>
+        <fiber>17.0</fiber>
+        <foodname>L??i l?n</foodname>
+        <id>760</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>212.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>13.0</fiber>
+        <foodname>Móng l?n</foodname>
+        <id>761</id>
+        <protein>23.0</protein>
+    </material>
+    <material>
+        <calories>854.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>52.0</fat>
+        <fiber>94.0</fiber>
+        <foodname>M? bò</foodname>
+        <id>762</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>857.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>45.0</fat>
+        <fiber>94.0</fiber>
+        <foodname>M? lá l?n</foodname>
+        <id>763</id>
+        <protein>2.0</protein>
+    </material>
+    <material>
+        <calories>79.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>M?c nang</foodname>
+        <id>764</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>93.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>M?c ?ng</foodname>
+        <id>765</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>74.0</calories>
+        <carbonhydrate>3.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Nghêu</foodname>
+        <id>766</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>92.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Ph?i bò</foodname>
+        <id>767</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>85.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Ph?i l?n</foodname>
+        <id>768</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>182.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>8.0</fat>
+        <fiber>17.0</fiber>
+        <foodname>Ru?t non</foodname>
+        <id>769</id>
+        <protein>8.0</protein>
+    </material>
+    <material>
+        <calories>79.0</calories>
+        <carbonhydrate>5.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Sò</foodname>
+        <id>770</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>306.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>11.0</fat>
+        <fiber>26.0</fiber>
+        <foodname>S??n bò (n?c và m?)</foodname>
+        <id>771</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>234.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>5.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>Tai l?n</foodname>
+        <id>772</id>
+        <protein>22.0</protein>
+    </material>
+    <material>
+        <calories>103.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Th?n bò</foodname>
+        <id>773</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>100.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>3.0</fiber>
+        <foodname>Th?n l?n</foodname>
+        <id>774</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>198.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>13.0</fiber>
+        <foodname>Th?t th?n l?n (n?c và m?)</foodname>
+        <id>775</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>143.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Th?t th?n l?n (n?c)</foodname>
+        <id>776</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>278.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>9.0</fat>
+        <fiber>23.0</fiber>
+        <foodname>Th?t bò t??i (c? con – c? n?c l?n m?)</foodname>
+        <id>777</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>222.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>6.0</fat>
+        <fiber>16.0</fiber>
+        <foodname>Th?t chân l?n (n?c và m? – ph?n phía hông)</foodname>
+        <id>778</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>245.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>7.0</fat>
+        <fiber>19.0</fiber>
+        <foodname>Th?t chân l?n (n?c và m?)</foodname>
+        <id>779</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>137.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>5.0</fiber>
+        <foodname>Th?t chân l?n (n?c – ph?n phía hông)</foodname>
+        <id>780</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>136.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Th?t chân l?n (n?c)</foodname>
+        <id>781</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>109.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Th?t dê</foodname>
+        <id>782</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>143.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>8.0</fiber>
+        <foodname>Th?t gà xay</foodname>
+        <id>783</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>655.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>25.0</fat>
+        <fiber>70.0</fiber>
+        <foodname>Th?t má l?n</foodname>
+        <id>784</id>
+        <protein>6.0</protein>
+    </material>
+    <material>
+        <calories>277.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>8.0</fat>
+        <fiber>23.0</fiber>
+        <foodname>Th?t s??n (n?c và m?)</foodname>
+        <id>785</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>142.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>Th?t th?n bò (ph?n n?c)</foodname>
+        <id>786</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>99.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Th?t trâu</foodname>
+        <id>787</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>236.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>6.0</fat>
+        <fiber>18.0</fiber>
+        <foodname>Th?t vai (n?c và m?)</foodname>
+        <id>788</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>148.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Th?t vai (n?c)</foodname>
+        <id>789</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>251.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>8.0</fat>
+        <fiber>19.0</fiber>
+        <foodname>Th?t ?c bò (n?c và m?)</foodname>
+        <id>790</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>155.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>7.0</fiber>
+        <foodname>Th?t ?c bò (ph?n n?c)</foodname>
+        <id>791</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>112.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Tim bò</foodname>
+        <id>792</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>153.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>Tim gà</foodname>
+        <id>793</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>118.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>Tim l?n</foodname>
+        <id>794</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>158.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>11.0</fiber>
+        <foodname>Tr?ng chim cút s?ng</foodname>
+        <id>795</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>252.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>18.0</fiber>
+        <foodname>Tr?ng cá</foodname>
+        <id>796</id>
+        <protein>25.0</protein>
+    </material>
+    <material>
+        <calories>167.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Tr?ng gà bác</foodname>
+        <id>797</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>142.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>10.0</fiber>
+        <foodname>Tr?ng gà kho, rim</foodname>
+        <id>798</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>155.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>11.0</fiber>
+        <foodname>Tr?ng gà lu?c</foodname>
+        <id>799</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>157.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Tr?ng gà omelet</foodname>
+        <id>800</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>196.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>Tr?ng gà rán</foodname>
+        <id>801</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>47.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Tr?ng gà s?ng, lòng tr?ng</foodname>
+        <id>802</id>
+        <protein>10.0</protein>
+    </material>
+    <material>
+        <calories>317.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>10.0</fat>
+        <fiber>27.0</fiber>
+        <foodname>Tr?ng gà s?ng, lòng ??</foodname>
+        <id>803</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>143.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>10.0</fiber>
+        <foodname>Tr?ng gà s?ng</foodname>
+        <id>804</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>171.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Tr?ng gà tây</foodname>
+        <id>805</id>
+        <protein>12.0</protein>
+    </material>
+    <material>
+        <calories>185.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>13.0</fiber>
+        <foodname>Tr?ng ng?ng s?ng</foodname>
+        <id>806</id>
+        <protein>14.0</protein>
+    </material>
+    <material>
+        <calories>226.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>12.0</fiber>
+        <foodname>Tr?ng v?t l?n</foodname>
+        <id>807</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>185.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>14.0</fiber>
+        <foodname>Tr?ng v?t s?ng</foodname>
+        <id>808</id>
+        <protein>13.0</protein>
+    </material>
+    <material>
+        <calories>112.0</calories>
+        <carbonhydrate>2.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>2.0</fiber>
+        <foodname>Tôm hùm gai</foodname>
+        <id>809</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>90.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>Tôm hùm ph??ng b?c</foodname>
+        <id>810</id>
+        <protein>19.0</protein>
+    </material>
+    <material>
+        <calories>100.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>Tôm</foodname>
+        <id>811</id>
+        <protein>16.0</protein>
+    </material>
+    <material>
+        <calories>211.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>5.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>V?t hoang dã, th?t và da</foodname>
+        <id>812</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>404.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>13.0</fat>
+        <fiber>39.0</fiber>
+        <foodname>V?t nuôi, th?t và da</foodname>
+        <id>813</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>132.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>6.0</fiber>
+        <foodname>V?t nuôi, th?t</foodname>
+        <id>814</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>143.0</calories>
+        <carbonhydrate>1.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>11.0</fiber>
+        <foodname>Óc bò</foodname>
+        <id>815</id>
+        <protein>11.0</protein>
+    </material>
+    <material>
+        <calories>127.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>2.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>Óc l?n</foodname>
+        <id>816</id>
+        <protein>10.0</protein>
+    </material>
+    <material>
+        <calories>378.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>12.0</fat>
+        <fiber>33.0</fiber>
+        <foodname>?uôi l?n</foodname>
+        <id>817</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>211.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>4.0</fat>
+        <fiber>15.0</fiber>
+        <foodname>?ùi gà, th?t và da</foodname>
+        <id>818</id>
+        <protein>17.0</protein>
+    </material>
+    <material>
+        <calories>119.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>1.0</fat>
+        <fiber>4.0</fiber>
+        <foodname>?ùi gà, th?t</foodname>
+        <id>819</id>
+        <protein>20.0</protein>
+    </material>
+    <material>
+        <calories>89.0</calories>
+        <carbonhydrate>4.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>0.0</fiber>
+        <foodname>?c</foodname>
+        <id>820</id>
+        <protein>18.0</protein>
+    </material>
+    <material>
+        <calories>172.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>3.0</fat>
+        <fiber>9.0</fiber>
+        <foodname>?c gà, th?t và da</foodname>
+        <id>821</id>
+        <protein>21.0</protein>
+    </material>
+    <material>
+        <calories>110.0</calories>
+        <carbonhydrate>0.0</carbonhydrate>
+        <fat>0.0</fat>
+        <fiber>1.0</fiber>
+        <foodname>?c gà, th?t</foodname>
+        <id>822</id>
+        <protein>23.0</protein>
+    </material>
+</materials>

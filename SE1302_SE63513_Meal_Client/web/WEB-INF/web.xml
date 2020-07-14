@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>LoadMaterialController</servlet-name>
+        <servlet-class>tien.controllers.LoadMaterialController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadFoodController</servlet-name>
+        <servlet-class>tien.controllers.LoadFoodController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RecommendMealController</servlet-name>
+        <servlet-class>tien.controllers.RecommendMealController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubscriptionController</servlet-name>
+        <servlet-class>tien.controllers.SubscriptionController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoadMaterialController</servlet-name>
+        <url-pattern>/LoadMaterialController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadFoodController</servlet-name>
+        <url-pattern>/LoadFoodController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RecommendMealController</servlet-name>
+        <url-pattern>/RecommendMealController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubscriptionController</servlet-name>
+        <url-pattern>/SubscriptionController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>LoadMaterialController</welcome-file>
+    </welcome-file-list>
+</web-app>
