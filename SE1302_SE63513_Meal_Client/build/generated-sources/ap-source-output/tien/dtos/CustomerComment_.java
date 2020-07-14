@@ -6,7 +6,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import tien.dtos.Customer;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T09:49:10")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T10:11:41")
 @StaticMetamodel(CustomerComment.class)
 public class CustomerComment_ { 
 

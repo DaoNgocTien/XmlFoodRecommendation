@@ -6,7 +6,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import tien.webservice.FoodMaterial;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T09:49:12")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T10:11:47")
 @StaticMetamodel(Material.class)
 public class Material_ { 
 

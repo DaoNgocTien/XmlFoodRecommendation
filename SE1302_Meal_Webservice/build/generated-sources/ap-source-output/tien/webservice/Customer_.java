@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import tien.webservice.CustomerComment;
 import tien.webservice.CustomerRecommendationFood;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T09:49:12")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T10:11:47")
 @StaticMetamodel(Customer.class)
 public class Customer_ { 
 

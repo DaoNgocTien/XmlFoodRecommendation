@@ -157,7 +157,7 @@
                                 }
 
                             }
-                            
+
                             const reset = () => {
                                 document.querySelector("#opGender").value = "0";
                                 document.querySelector("#txtAge").value = "";
@@ -319,12 +319,13 @@
 
             <!--Display food calculated-->
             <!--Breakfast-->
-            <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
-                <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">BREAKFAST</span></h5>
+            <c:if test="${sessionScope.BREAKFAST != null}">
+                <c:if test="${not empty sessionScope.BREAKFAST}">
+                    <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+                        <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">BREAKFAST</span></h5>
 
-                <div class="w3-row-padding w3-padding-16 w3-center" id="foodForBreakfast">
-                    <c:if test="${sessionScope.BREAKFAST != null}">
-                        <c:if test="${not empty sessionScope.BREAKFAST}">
+                        <div class="w3-row-padding w3-padding-16 w3-center" id="foodForBreakfast">
+
                             <c:set var="doc" value="${sessionScope.BREAKFAST}"/>
                             <c:forEach var="list" items="${sessionScope.BREAKFAST}" varStatus="counter">
                                 <div class="w3-quarter">
@@ -345,10 +346,11 @@
                                     Method:<br/>
                                 </div>
                             </c:forEach>
-                        </c:if>
-                    </c:if> 
-                </div>
-            </div>
+
+                        </div>
+                    </div>
+                </c:if>
+            </c:if> 
 
             <!--            <div class="w3-sand w3-grayscale w3-large">
                             <div class="w3-container" id="menu">
@@ -383,12 +385,13 @@
                             </div>
                         </div>-->
             <!--Lunch-->
-            <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
-                <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">LUNCH</span></h5>
+            <c:if test="${sessionScope.LUNCH != null}">
+                <c:if test="${not empty sessionScope.LUNCH}">
+                    <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+                        <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">LUNCH</span></h5>
 
-                <div class="w3-row-padding w3-padding-16 w3-center" id="foodForLunch">
-                    <c:if test="${sessionScope.LUNCH != null}">
-                        <c:if test="${not empty sessionScope.LUNCH}">
+                        <div class="w3-row-padding w3-padding-16 w3-center" id="foodForLunch">
+
                             <c:set var="doc" value="${sessionScope.LUNCH}"/>
                             <c:forEach var="list" items="${sessionScope.LUNCH}" varStatus="counter">
                                 <div class="w3-quarter">
@@ -403,18 +406,20 @@
                                     <input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();">
                                 </div>
                             </c:forEach>
-                        </c:if>
-                    </c:if> 
-                </div>
-            </div>
+
+                        </div>
+                    </div>
+                </c:if>
+            </c:if> 
 
             <!--Dinner-->
-            <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
-                <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">DINNER</span></h5>
+            <c:if test="${sessionScope.DINNER != null}">
+                <c:if test="${not empty sessionScope.DINNER}">
+                    <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+                        <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">DINNER</span></h5>
 
-                <div class="w3-row-padding w3-padding-16 w3-center" id="foodForDinner">
-                    <c:if test="${sessionScope.DINNER != null}">
-                        <c:if test="${not empty sessionScope.DINNER}">
+                        <div class="w3-row-padding w3-padding-16 w3-center" id="foodForDinner">
+
                             <c:set var="doc" value="${sessionScope.DINNER}"/>
                             <c:forEach var="list" items="${sessionScope.DINNER}" varStatus="counter">
                                 <div class="w3-quarter">
@@ -429,10 +434,11 @@
                                     <input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();">
                                 </div>
                             </c:forEach>
-                        </c:if>
-                    </c:if> 
-                </div>
-            </div>
+
+                        </div>
+                    </div>
+                </c:if>
+            </c:if> 
 
             <!-- End page content -->
         </div>

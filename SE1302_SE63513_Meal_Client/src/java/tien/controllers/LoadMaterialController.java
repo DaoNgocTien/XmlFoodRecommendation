@@ -51,12 +51,16 @@ public class LoadMaterialController extends HttpServlet {
             Client client = ClientBuilder.newClient();
             WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.GET_ALL_MATERIAL);
             String res = wt.request().get(String.class);
-            res = res.replace("><", ">\n<");
+            
+            res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
+//            res = res.replace("><", ">\n<");
 //            System.out.println(res);
             HttpSession session = request.getSession();
             Document doc = DOMUtils.parseXMLStringIntoDOM(res);
-            session.setAttribute("DOMMATERIAL", doc);
             
+            session.setAttribute("DOMMATERIAL", doc);
+            session.setAttribute("MATERIALSTRING", res);
+            System.out.println("LoadMaterialController successfully");
             url = SUCCESS;
         } catch (Exception e) {
             e.printStackTrace();
