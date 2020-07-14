@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import tien.controllers.CalculateFoodController;
-import tien.daos.FoodDAO;
+import tien.utils.Constants;
 import tien.webservice.Food;
 import tien.webservice.Material;
 
@@ -27,7 +27,9 @@ import tien.webservice.Material;
  */
 public class PreProcessDetailHtmlIntoXML implements Serializable {
 
-    public static Food preProcessDetailHtmlIntoXML(List<Material> list,Food food) throws MalformedURLException, IOException, ClassNotFoundException, SQLException {
+    private static final Constants CONSTANTS = new Constants();
+
+    public static Food preProcessDetailHtmlIntoXML(List<Material> list, Food food) throws MalformedURLException, IOException, ClassNotFoundException, SQLException {
         List<String> listMaterial = new ArrayList<>();
 
         URL url = new URL(food.getHref());
@@ -35,10 +37,10 @@ public class PreProcessDetailHtmlIntoXML implements Serializable {
         URLConnection urlConnection = url.openConnection();
 
         String materialCooking = "";
-        String begin = "<div class=\"nguyen_lieu\">";
-        String beginTool = "<div class=\"nguyen_lieu dung_cu\">";
-        String beginCookingMethod = "cach_che_bien";
-        String end = "<div style=\"margin: 20px 0; padding: 10px; border: 1px ";
+        String begin = CONSTANTS.FOOD_DETAIL_BEGIN;
+        String beginTool = CONSTANTS.FOOD_DETAIL_BEGIN_TOOL;
+        String beginCookingMethod = CONSTANTS.FOOD_DETAIL_BEGIN_COOKING_METHOD;
+        String end = CONSTANTS.FOOD_DETAIL_END;
         boolean start = false;
         boolean startTool = false;
         String line = "";
@@ -63,10 +65,10 @@ public class PreProcessDetailHtmlIntoXML implements Serializable {
                     if (startTool) {
                         cookingMethod += line + "\n";
                     } else {
-                        if (line.contains("<span class=\"btn_muahang\">")) {
+                        if (line.contains(CONSTANTS.FOOD_DETAIL_CHECK_MATERIAL_CONTAINS)) {
 
-                            line = line.replace("<li><span class=\"btn_muahang\"><i class=\"fa fa-circle\" aria-hidden=\"true\"></i>", "");
-                            line = line.replace("<a", "");
+                            line = line.replace(CONSTANTS.FOOD_DETAIL_CHECK_MATERIAL_REPLACE_WITH_EMPTY, "");
+                            line = line.replace(CONSTANTS.FOOD_DETAIL_CHECK_MATERIAL_REPLACE_WITH_EMPTY_A, "");
                             listMaterial.add(line);
 
                             materialCooking += "<span><i class=\"fa fa-circle\" aria-hidden=\"true\"></i>" + line + "</span>" + "\n";
@@ -82,7 +84,7 @@ public class PreProcessDetailHtmlIntoXML implements Serializable {
         //  Add cooking method and material list
         food.setCookingMethod(cookingMethod);
         food.setMaterialDescription(materialCooking);
-        
+
         //  Calculate energy then update food
         CalculateFoodController.calculateFoodEnergy(list, listMaterial, food);
 //        

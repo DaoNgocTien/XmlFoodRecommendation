@@ -24,18 +24,19 @@ import tien.jaxb.obj.Materials;
 import tien.service.WriteIntoFile;
 import tien.service.XMLIntoValidatedXML;
 import tien.service.thehinh365.PreProcessHtmlIntoXML;
+import tien.utils.Constants;
 
 /**
  *
  * @author Admin
  */
 public class CrawlMaterialController extends HttpServlet {
-
-    private static final String SCHEMA_FILE = "/WEB-INF/material.xsd";
-    private static final String RAW_MATERIAL = "/WEB-INF/rawMaterial.xml";
-    private static final String XSL_FILE = "/WEB-INF/material.xsl";
-    private static final String VALIDATED_XML = "/WEB-INF/validatedXML.xml";
-    private static String REAL = "D:\\DaoNgocTien\\SE1302_Meal_Webservice\\web";
+    private static final Constants CONSTANTS = new Constants();
+    private static final String SCHEMA_FILE = CONSTANTS.MATERIAL_SCHEMA_FILE;
+    private static final String RAW_MATERIAL = CONSTANTS.MATERIAL_RAW_MATERIAL;
+    private static final String XSL_FILE = CONSTANTS.MATERIAL_XSL_FILE;
+    private static final String VALIDATED_XML = CONSTANTS.MATERIAL_VALIDATED_XML;
+    private static final String REAL = CONSTANTS.MATERIAL_REAL;
 
     public static void main(String[] args) {
         try {

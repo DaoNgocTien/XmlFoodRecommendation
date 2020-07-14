@@ -14,15 +14,18 @@ import java.io.File;
 import java.io.IOException;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXParseException;
+import tien.utils.Constants;
 
 /**
  *
  * @author Admin
  */
 public class XJCGenerateJavaObject {
-    private static final String OUTPUT = "D:\\DaoNgocTien\\SE1302_Meal_Webservice\\src\\java";
-    
-    public static void generateJavaObject(File schemaFile) throws IOException{
+
+    private static final Constants CONSTANTS = new Constants();
+    private static final String OUTPUT = CONSTANTS.XJC_OUTPUT;
+
+    public static void generateJavaObject(File schemaFile) throws IOException {
         SchemaCompiler sc = XJC.createSchemaCompiler();
         sc.setErrorListener(new ErrorListener() {
             @Override
@@ -32,28 +35,28 @@ public class XJCGenerateJavaObject {
 
             @Override
             public void fatalError(SAXParseException saxpe) {
-                  System.out.println("Fatal Error:  " + saxpe);
+                System.out.println("Fatal Error:  " + saxpe);
             }
 
             @Override
             public void warning(SAXParseException saxpe) {
-                  System.out.println("Warning:  " + saxpe);
+                System.out.println("Warning:  " + saxpe);
             }
 
             @Override
             public void info(SAXParseException saxpe) {
-                  System.out.println("Info:  " + saxpe);
+                System.out.println("Info:  " + saxpe);
             }
         });
-        
+
         sc.forcePackageName("tien.jaxb.obj");
         InputSource is = new InputSource(schemaFile.toURI().toString());
         sc.parseSchema(is);
-        
+
         S2JJAXBModel model = sc.bind();
         JCodeModel code = model.generateCode(null, null);
         code.build(new File(OUTPUT));
-        
+
         System.out.println("generateJavaObject successfully");
     }
 }

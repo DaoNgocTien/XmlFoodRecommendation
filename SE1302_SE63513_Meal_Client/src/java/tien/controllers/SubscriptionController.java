@@ -6,8 +6,6 @@
 package tien.controllers;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,19 +38,19 @@ public class SubscriptionController extends HttpServlet {
             String txtName = request.getParameter("txtName");
             String txtEmail = request.getParameter("txtEmail");
             String txtTitle = request.getParameter("txtTitle");
-            String txtDate = request.getParameter("txtDate");
+//            String txtDate = request.getParameter("txtDate");
             String txtMessage = request.getParameter("txtMessage");
             System.out.println(txtName + "\n"
                     + txtEmail + "\n"
                     + txtTitle + "\n"
-                    + new Date(txtDate) + "\n"
+//                    + new Date(txtDate) + "\n"
                     + txtMessage + "\n");
             
 
             Form form = new Form();
             form.param("txtName", txtName);
             form.param("txtEmail", txtEmail);
-            form.param("txtDate", txtDate);
+//            form.param("txtDate", txtDate);
             form.param("txtMessage", txtTitle + ":\n" + txtMessage);
 
             Client client = ClientBuilder.newClient();

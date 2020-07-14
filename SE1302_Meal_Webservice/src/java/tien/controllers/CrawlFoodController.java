@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-import javax.persistence.EntityManager;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,9 +20,9 @@ import tien.service.WriteIntoFile;
 import tien.service.kitchenart.PreProcessDetailHtmlIntoXML;
 import tien.service.kitchenart.PreProcessHrefHtmlIntoXML;
 import tien.stax.ConvertXMLIntoObjectByStAX;
+import tien.utils.Constants;
 import tien.webservice.Food;
 import tien.webservice.Material;
-import tien.webservice.service.FoodFacadeREST;
 
 /**
  *
@@ -31,13 +30,9 @@ import tien.webservice.service.FoodFacadeREST;
  */
 public class CrawlFoodController extends HttpServlet {
 
-    private static FoodFacadeREST foodFacadeREST = null;
-    private static EntityManager em = null;
-    private static final String SCHEMA_FILE = "/WEB-INF/material.xsd";
-    private static final String RAW_FOOD = "/WEB-INF/rawFood.xml";
-    private static final String XSL_FILE = "/WEB-INF/material.xsl";
-    private static final String VALIDATED_XML = "/WEB-INF/validatedXML.xml";
-    private static String REAL = "D:\\DaoNgocTien\\SE1302_Meal_Webservice\\web";
+    private static final Constants CONSTANTS = new Constants();
+    private static final String RAW_FOOD = CONSTANTS.FOOD_RAW_FOOD;
+    private final static String REAL = CONSTANTS.MATERIAL_REAL;
 
     public static void main(String[] args) {
         try {
@@ -52,35 +47,35 @@ public class CrawlFoodController extends HttpServlet {
 //
 //            //  Convert xml file into object by StAX
 //            ConvertXMLIntoObjectByStAX StAX = new ConvertXMLIntoObjectByStAX();
-//            List<Food> list = StAX.convertXMLFoodIntoObjectByStAX(rawFoodXML);
-
-            //  Insert food into database
-            FoodDAO dao = new FoodDAO();
-//            for (Food food : list) {
+//            List<Food> listOld = StAX.convertXMLFoodIntoObjectByStAX(rawFoodXML);
+//
+//            //  Insert food into database
+//            FoodDAO dao = new FoodDAO();
+//            for (Food food : listOld) {
 //                dao.insertFood(food);
 //            }
 
-            //  Select all food with id
-          List<Food>  list = dao.selectFood();
-            for (Food food : list) {
-                food.setCalories(Math.round(food.getCalories()) * 1.0);
-                food.setCarbonhydrate(Math.round(food.getCarbonhydrate()) * 1.0);
-                food.setFiber(Math.round(food.getFiber()) * 1.0);
-                food.setFat(Math.round(food.getFat()) * 1.0);
-                food.setProtein(Math.round(food.getProtein()) * 1.0);
-                dao.updateFood(food);
-            }
-
+//            //  Select all food with id
+//            List<Food> list = dao.selectFood();
 //            //  for each food, get the cooking method and material and energy, then update food
 //            MaterialDAO materialDao = new MaterialDAO();
 //            List<Material> listMaterial = materialDao.selectMaterial();
-//            for (int i = 335; i < list.size(); i++) {
-////                Food food = list.get(i);
-////                list.remove(i);
-//                PreProcessDetailHtmlIntoXML.preProcessDetailHtmlIntoXML( listMaterial, list.get(i));
-////                dao.updateFood(food);
+//            for (int i = 1; i < list.size(); i++) {
+//                Food food = list.get(i);
+//                list.remove(i);
+//                PreProcessDetailHtmlIntoXML.preProcessDetailHtmlIntoXML(listMaterial, list.get(i));
+//                dao.updateFood(food);
 //            }
 
+//              Update food beautiful number
+//            for (Food food : list) {
+//                food.setCalories(Math.round(food.getCalories()) * 1.0);
+//                food.setCarbonhydrate(Math.round(food.getCarbonhydrate()) * 1.0);
+//                food.setFiber(Math.round(food.getFiber()) * 1.0);
+//                food.setFat(Math.round(food.getFat()) * 1.0);
+//                food.setProtein(Math.round(food.getProtein()) * 1.0);
+//                dao.updateFood(food);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }

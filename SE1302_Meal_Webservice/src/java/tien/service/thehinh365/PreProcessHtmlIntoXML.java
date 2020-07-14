@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import tien.utils.Constants;
 
 /**
  *
@@ -18,25 +19,25 @@ import java.net.URLConnection;
  */
 public class PreProcessHtmlIntoXML {
 
-    private static final String URL = "https://thehinh365.com/cong-cu/thanh-phan-dinh-duong-cac-loai-thuc-pham/";
-    private static final String KITCHENURL = "http://cook.kitchenart.vn/cong-thuc-nau-an/";
-    private static final String WIKI = "https://wikithethao.com/luong-calo-trong-thuc-an/";
+    private static final Constants CONSTANTS = new Constants();
+    private static final String URL = CONSTANTS.MATERIAL_CRAWL_URL;
+//    private static final String KITCHENURL = "http://cook.kitchenart.vn/cong-thuc-nau-an/";
+//    private static final String WIKI = "https://wikithethao.com/luong-calo-trong-thuc-an/";
 
     public static String preProcessHtmlIntoXML() throws MalformedURLException, IOException {
 
         String content = "";
-        content += "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + "\n";
-        content += "<tbody>" + "\n";
+        content += CONSTANTS.MATERIAL_CONTENT_BEGIN;
 
         URL url = new URL(URL);
         URLConnection urlConnection = url.openConnection();
 
         String line = "";
-        String begin = "<tbody>";
-        String end = "</tbody>";
+        String begin = CONSTANTS.MATERIAL_BEGIN;
+        String end = CONSTANTS.MATERIAL_END;
         boolean start = false;
         boolean startTableAnimal = false;
-        int beginWriting = 12;
+        int beginWriting = CONSTANTS.MATERIAL_BEGINWRITING;
 
         try (InputStreamReader isr = new InputStreamReader(urlConnection.getInputStream());
                 BufferedReader br = new BufferedReader(isr)) {
@@ -51,7 +52,7 @@ public class PreProcessHtmlIntoXML {
                     if (!startTableAnimal) {
                         start = false;
                         startTableAnimal = true;
-                        beginWriting = 20;
+                        beginWriting = CONSTANTS.MATERIAL_BEGINWRITING_ANIMAL;
                     } else {
                         break;
                     }
@@ -69,7 +70,7 @@ public class PreProcessHtmlIntoXML {
             }
         }
 
-        content += "</tbody>" + "\n";
+        content += CONSTANTS.MATERIAL_CONTENT_END;
         return content;
     }
 

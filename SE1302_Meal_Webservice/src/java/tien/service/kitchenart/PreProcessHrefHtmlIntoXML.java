@@ -11,20 +11,20 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import tien.utils.Constants;
 
 /**
  *
  * @author Admin
  */
 public class PreProcessHrefHtmlIntoXML {
-
-    private static String URL = "http://cook.kitchenart.vn/cong-thuc-nau-an/page/";
+ private static final Constants CONSTANTS = new Constants();
+    private static String URL = CONSTANTS.FOOD_CRAWL_URL;
 
     public static String preProcessHrefHtmlIntoXML() throws MalformedURLException, IOException {
 
         String content = "";
-        content += "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + "\n";
-        content += "<div class=\"congthuc_item\">" + "\n";
+        content += CONSTANTS.MATERIAL_CONTENT_BEGIN;
 
         for (int i = 1; i < 32; i++) {
 
@@ -32,9 +32,9 @@ public class PreProcessHrefHtmlIntoXML {
             URLConnection urlConnection = url.openConnection();
 
             String line = "";
-            String begin = "<div class=\"congthuc_item\">";
-            String beginWriting = "<a href=\"http://cook.kitchenart.vn/cong-thuc-nau-an/";
-            String end = "<!-- chỉ mục trang -->";
+            String begin = CONSTANTS.FOOD_BEGIN;
+            String beginWriting = CONSTANTS.FOOD_BEGINWRITING;
+            String end = CONSTANTS.FOOD_END;
             boolean start = false;
 
             try (InputStreamReader isr = new InputStreamReader(urlConnection.getInputStream());
@@ -62,7 +62,7 @@ public class PreProcessHrefHtmlIntoXML {
             }
         }
 
-        content += "</div>" + "\n";
+        content += CONSTANTS.MATERIAL_CONTENT_END;
         return content;
     }
 }

@@ -448,22 +448,7 @@
             <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">deSigning</a></p>
         </footer>
 
-        <script>
-            // Tabbed Menu
-            function openMenu(evt, menuName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("menu");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-            }
-        </script>
+
 
     </body>
 </html>

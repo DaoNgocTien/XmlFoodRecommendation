@@ -11,7 +11,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -91,34 +90,34 @@ public class FoodFacadeREST extends AbstractFacade<Food> {
         return em;
     }
 
-    @Path("/getAllFood")
-    @GET
-    @Produces(MediaType.APPLICATION_XML)
-    public List<Food> getAllFood(@QueryParam("getAll") String getAll,
-            @QueryParam("food") String food) {
-        List<Food> list = (List<Food>) getEntityManager()
-                .createQuery(""
-                        + " SELECT f"
-                        + " FROM Food f WHERE f.cookingMethod != :cookingMethod AND f.materialDescription != :materialDescription")
-                //                .createQuery( " SELECT CAST(("
-                //                        + " SELECT "
-                //                        //                        + "id ,href ,src ,image ,title ,cookingMethod ,materialDescription ,carbonhydrate ,fiber ,fat ,protein ,calories"
-                //                        + " f"
-                //                        + " FROM Food f WHERE f.cookingMethod != :cookingMethod AND f.materialDescription != :materialDescription"
-                //                        + " FOR XML PATH ('food'), ROOT ('foods'))"
-                //                        + " AS VARCHAR(MAX))")
-                .setParameter("cookingMethod", "") // attr trong bảng    // tên biến (chỗ dấu ? hồi xưa)
-                .setParameter("materialDescription", "").getResultList();
-        System.out.println("getAll " + getAll);
-        System.out.println("food " + food);
-        try {
-            FoodDAO dao = new FoodDAO();
-            list = dao.selectFood();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return list;
-    }
+//    @Path("/getAllFood")
+//    @GET
+//    @Produces(MediaType.APPLICATION_XML)
+//    public List<Food> getAllFood(@QueryParam("getAll") String getAll,
+//            @QueryParam("food") String food) {
+//        List<Food> list = (List<Food>) getEntityManager()
+//                .createQuery(""
+//                        + " SELECT f"
+//                        + " FROM Food f WHERE f.cookingMethod != :cookingMethod AND f.materialDescription != :materialDescription")
+//                //                .createQuery( " SELECT CAST(("
+//                //                        + " SELECT "
+//                //                        //                        + "id ,href ,src ,image ,title ,cookingMethod ,materialDescription ,carbonhydrate ,fiber ,fat ,protein ,calories"
+//                //                        + " f"
+//                //                        + " FROM Food f WHERE f.cookingMethod != :cookingMethod AND f.materialDescription != :materialDescription"
+//                //                        + " FOR XML PATH ('food'), ROOT ('foods'))"
+//                //                        + " AS VARCHAR(MAX))")
+//                .setParameter("cookingMethod", "") // attr trong bảng    // tên biến (chỗ dấu ? hồi xưa)
+//                .setParameter("materialDescription", "").getResultList();
+//        System.out.println("getAll " + getAll);
+//        System.out.println("food " + food);
+//        try {
+//            FoodDAO dao = new FoodDAO();
+//            list = dao.selectFood();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return list;
+//    }
 
 
 

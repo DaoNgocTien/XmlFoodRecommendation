@@ -10,7 +10,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import tien.utils.SQLUtils;
-import tien.webservice.Food;
 
 /**
  *
@@ -20,7 +19,6 @@ public class CustomerDAO implements Serializable {
 
     public boolean insert(String txtName,
             String txtEmail,
-            String txtDate,
             String txtMessage) throws ClassNotFoundException, SQLException {
         boolean result = false;
         String query = "INSERT INTO Customer ( email, subscription, fullname) VALUES ( ?, ?, ?)";

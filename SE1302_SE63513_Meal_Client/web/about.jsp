@@ -60,8 +60,8 @@
     <body onload="callINFO();">
         <script>
             const  callINFO = () => {
-                let today = new Date().toLocaleDateString();
-                document.querySelector("#txtDate").value = today;
+//                let today = new Date().toLocaleDateString();
+//                document.querySelector("#txtDate").value = today;
 //                if (localStorage.getItem("SESSIONINFO")) {
 //                    alert(localStorage.getItem("SESSIONINFO"));
 //                } else {
@@ -119,7 +119,7 @@
                         <p><input class="w3-input w3-padding-16 w3-border" value="${param.txtName}" type="text" placeholder="Your Name" required name="txtName"></p>
                         <p><input class="w3-input w3-padding-16 w3-border" value="${param.txtEmail}" type="email" placeholder="And your email" required name="txtEmail"></p>
                         <p><input class="w3-input w3-padding-16 w3-border" value="${param.txtTitle}" type="text" placeholder="Your request title" required name="txtTitle" ></p>
-                        <p><input class="w3-input w3-padding-16 w3-border" value="${param.txtDate}" id="txtDate" type="hidden" placeholder="Date and time" required name="txtDate"  ></p>
+                        <!--<p><input class="w3-input w3-padding-16 w3-border" value="${param.txtDate}" id="txtDate" type="hidden" placeholder="Date and time" required name="txtDate"  ></p>-->
                         <p><input class="w3-input w3-padding-16 w3-border" value="${param.txtMessage}" type="text" placeholder="Message \ Special requirements" required name="txtMessage"></p>
                         <div class="form-group">
                             <div id="thongbaoloi" class="alert alert-warning" role="alert" style="display: block;">

@@ -97,11 +97,11 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
     @Produces(MediaType.TEXT_PLAIN)
     public String createNewCustomer(@FormParam("txtName") String txtName,
             @FormParam("txtEmail") String txtEmail,
-            @FormParam("txtDate") String txtDate,
+//            @FormParam("txtDate") String txtDate,
             @FormParam("txtMessage") String txtMessage) {
         System.out.println(txtName);
         System.out.println(txtEmail);
-        System.out.println(txtDate);
+//        System.out.println(txtDate);
         System.out.println(txtMessage);
 
         try {
@@ -114,7 +114,7 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
                 return "Email exist";
             } else {
                 CustomerDAO dao = new CustomerDAO();
-                dao.insert(txtName, txtEmail, txtDate, txtMessage);
+                dao.insert(txtName, txtEmail, txtMessage);
                 Customer newCustomer = (Customer) getEntityManager()
                         .createQuery("SELECT c FROM Customer c WHERE c.email = :email")
                         .setParameter("email", txtEmail)
