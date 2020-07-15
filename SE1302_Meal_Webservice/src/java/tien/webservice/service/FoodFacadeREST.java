@@ -5,6 +5,8 @@
  */
 package tien.webservice.service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -118,7 +120,23 @@ public class FoodFacadeREST extends AbstractFacade<Food> {
 //        }
 //        return list;
 //    }
-
-
+    @Path("/calculateFood")
+    @GET
+    @Produces({MediaType.APPLICATION_XML + "; charset=UTF-8", MediaType.APPLICATION_JSON + "; charset=UTF-8"})
+    public List<Food> calculateFood(@QueryParam("calories") double calories) {
+        List<Food> list = (List<Food>) super.findAll();
+        Collections.shuffle(list);
+        List<Food> result = new ArrayList<>();
+        int count = 0;
+        System.out.println(calories);
+        for (Food food : list) {
+            if (count + food.getCalories() <= calories * 1.15) {
+                result.add(food);
+                count += food.getCalories();
+            }
+        }
+        System.out.println(count);
+        return result;
+    }
 
 }

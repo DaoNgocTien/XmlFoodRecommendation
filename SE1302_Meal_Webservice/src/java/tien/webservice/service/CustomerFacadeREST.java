@@ -7,6 +7,7 @@ package tien.webservice.service;
 
 import java.util.List;
 import javax.ejb.Stateless;
+import javax.jms.Session;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
@@ -20,7 +21,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import tien.daos.CustomerCommentDAO;
-import tien.daos.CustomerDAO;
 import tien.webservice.Customer;
 
 /**
@@ -97,7 +97,7 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
     @Produces(MediaType.TEXT_PLAIN)
     public String createNewCustomer(@FormParam("txtName") String txtName,
             @FormParam("txtEmail") String txtEmail,
-//            @FormParam("txtDate") String txtDate,
+            //            @FormParam("txtDate") String txtDate,
             @FormParam("txtMessage") String txtMessage) {
         System.out.println(txtName);
         System.out.println(txtEmail);
@@ -110,22 +110,31 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
                     .setParameter("email", txtEmail)
                     .getResultList();
             System.out.println(list.size());
-            if (!list.isEmpty()) {
-                return "Email exist";
-            } else {
-                CustomerDAO dao = new CustomerDAO();
-                dao.insert(txtName, txtEmail, txtMessage);
+            if (list.isEmpty()) {
+                Customer cus = new Customer();
+                cus.setEmail(txtEmail);
+                cus.setFullname(txtName);
+                cus.setSubscription(1);
+                System.out.println("==================================== 0");
+                super.create(cus);
+                System.out.println("==================================== 1");
+                getEntityManager().flush();
+//                CustomerDAO dao = new CustomerDAO();
+//                dao.insert(txtName, txtEmail, txtMessage);
                 Customer newCustomer = (Customer) getEntityManager()
                         .createQuery("SELECT c FROM Customer c WHERE c.email = :email")
                         .setParameter("email", txtEmail)
                         .getSingleResult();
+                System.out.println(newCustomer.getId() + " = " + newCustomer.getEmail() + " = " + newCustomer.getSubscription());
+                System.out.println("==================================== 2");
                 CustomerCommentDAO ccDAO = new CustomerCommentDAO();
                 ccDAO.insert(newCustomer.getId(), txtMessage);
+                System.out.println("==================================== 3");
+                return "Creat Customer Successfully";
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "Creat Customer Successfully";
+        return "Email exist";
     }
 }

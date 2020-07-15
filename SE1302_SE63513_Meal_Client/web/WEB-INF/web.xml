@@ -16,6 +16,10 @@
         <servlet-name>SubscriptionController</servlet-name>
         <servlet-class>tien.controllers.SubscriptionController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DisplayMaterialController</servlet-name>
+        <servlet-class>tien.controllers.DisplayMaterialController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoadMaterialController</servlet-name>
         <url-pattern>/LoadMaterialController</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>SubscriptionController</servlet-name>
         <url-pattern>/SubscriptionController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayMaterialController</servlet-name>
+        <url-pattern>/DisplayMaterialController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

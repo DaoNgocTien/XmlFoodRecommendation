@@ -14,8 +14,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import org.w3c.dom.Document;
 import tien.dtos.Food;
 import tien.utils.ConstantsWebServiceWareHouse;
+import tien.utils.DOMUtils;
 
 /**
  *
@@ -43,71 +48,22 @@ public class RecommendMealController extends HttpServlet {
             System.out.println(request.getParameter("txtHeight"));
             System.out.println(request.getParameter("txtWeight"));
             System.out.println(request.getParameter("txtOpActivity"));
-            //  list food for each meal
-            breakfast = new ArrayList<>();
-            lunch = new ArrayList<>();
-            dinner = new ArrayList<>();
 
-            //  calo calculate
-            double calo = 0;
-            //  limit calo for each set of meal
-            double limit = calories / 3;
-
-            //  list food will be displayed
-            display = (List<Food>) request.getAttribute("BREAKFAST");
-            System.out.println("BREAKFASTTTTTTTTTTTTTTTTTTTTTTTTTT");
-            Collections.shuffle(display);
-            for (Food food : display) {
-                if (calo <= limit * 1.15) {
-                    calo += food.getCalories();
-                    breakfast.add(food);
-                    System.out.println("ADD");
-                } else {
-                    calo = 0;
-                    display.clear();
-                    break;
-                }
-            }
-            System.out.println("LUNCHHHHHHHHHHHHHHHHHHHHHHH");
-            display = (List<Food>) request.getAttribute("LUNCH");
-            Collections.shuffle(display);
-            for (Food food : display) {
-
-                if (calo <= limit * 1.15) {
-                    calo += food.getCalories();
-                    System.out.println("ADD");
-                    lunch.add(food);
-                } else {
-                    calo = 0;
-                    display.clear();
-                    break;
-                }
-
-            }
-            System.out.println("DINNERRRRRRRRRRRRRRRRRRRRRR");
-            display = (List<Food>) request.getAttribute("DINNER");
-            Collections.shuffle(display);
-            for (Food food : display) {
-                if (calo <= limit * 1.15) {
-                    calo += food.getCalories();
-                    System.out.println("ADD");
-                    dinner.add(food);
-                } else {
-                    calo = 0;
-                    display.clear();
-                    break;
-                }
-
-            }
+            Client client = ClientBuilder.newClient();
+            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.CALCULATE_FOOD);
+            String res = wt.queryParam("calories", calories).request().get(String.class);
+            System.out.println(res);
+            res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
+            Document doc = DOMUtils.parseXMLStringIntoDOM(res);
 
             url = SUCCESS;
             HttpSession session = request.getSession();
-            session.setAttribute("BREAKFAST", breakfast);
-            session.setAttribute("LUNCH", lunch);
-            session.setAttribute("DINNER", dinner);
-            System.out.println(((List<Food>) session.getAttribute("BREAKFAST")).size());
-            System.out.println(((List<Food>) session.getAttribute("LUNCH")).size());
-            System.out.println(((List<Food>) session.getAttribute("DINNER")).size());
+            session.setAttribute("RECOMMENDFOOD", doc);
+//            session.setAttribute("LUNCH", lunch);
+//            session.setAttribute("DINNER", dinner);
+//            System.out.println(((List<Food>) session.getAttribute("BREAKFAST")).size());
+//            System.out.println(((List<Food>) session.getAttribute("LUNCH")).size());
+//            System.out.println(((List<Food>) session.getAttribute("DINNER")).size());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

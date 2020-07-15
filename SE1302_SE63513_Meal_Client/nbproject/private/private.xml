@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/src/java/tien/controllers/LoadMaterialController.java</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/web/calculate.jsp</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/src/java/tien/controllers/LoadFoodController.java</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/web/dataindex.jsp</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/web/index.jsp</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/src/java/tien/utils/DOMUtils.java</file>
-            <file>file:/D:/DaoNgocTien/SE1302_SE63513_Meal_Client/web/about.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

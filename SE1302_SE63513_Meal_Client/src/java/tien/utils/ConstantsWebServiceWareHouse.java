@@ -14,9 +14,11 @@ import java.io.Serializable;
 public class ConstantsWebServiceWareHouse implements Serializable {
 
     public final String WEB_SERVICE_BASE_URI = "http://localhost:8080/SE1302_Meal_Webservice/webresources";
-    public final String GET_ALL_FOOD = "/tien.webservice.food/";
-    public final String GET_ALL_MATERIAL = "/tien.webservice.material/";
-    public final String SUBSCRIPTION = "tien.webservice.customer/createNewCustomer";
+    public final String GET_ALL_FOOD = "tien.webservice.food";
+    public final String CALCULATE_FOOD = "tien.webservice.food/calculateFood";
+    public final String GET_ALL_MATERIAL = "tien.webservice.material";
+    public final String SEARCH_MATERIAL = "tien.webservice.material/searchFoodByLikeName";
+    public final String SUBSCRIPTION = "/tien.webservice.customer/createNewCustomer";
 
     public ConstantsWebServiceWareHouse() {
     }

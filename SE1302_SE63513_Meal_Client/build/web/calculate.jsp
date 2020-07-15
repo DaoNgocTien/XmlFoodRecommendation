@@ -4,6 +4,7 @@
     Author     : Admin
 --%>
 
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -203,7 +204,7 @@
                         </script>
 
                         <!--Form for calculation BMR and BMI-->
-                        <form class="form-horizontal" name="cal_frm" id="cal_frm" action="LoadFoodController" method="POST">
+                        <form class="form-horizontal" name="cal_frm" id="cal_frm" action="RecommendMealController" method="POST">
                             <fieldset>
                                 <!-- Form Name -->
                                 <h1><legend>BMR CALCULATION</legend></h1>
@@ -212,8 +213,8 @@
                                     <label class="col-md-4 control-label">Gender</label>
                                     <div class="col-md-4">
                                         <select id="opGender" name="txtOpGender" class="form-control">
-                                            <option value="0">Gentle men</option>
-                                            <option value="1">Lady</option>
+                                            <option ${param.txtOpGender == '0' ? 'selected' : ''} value="0">Gentle men</option>
+                                            <option ${param.txtOpGender == '1' ? 'selected' : ''} value="1">Lady</option>
                                         </select>
                                     </div>
                                 </div>
@@ -249,11 +250,11 @@
                                     <label class="col-md-4 control-label">Daily activation</label>
                                     <div class="col-md-4">
                                         <select id="opActivity" name="txtOpActivity" class="form-control">
-                                            <option value="1.2">Rarely or never doing exercises</option>
-                                            <option value="1.375">Casual (Casual Exercise - 1-3 times/week)</option>
-                                            <option value="1.55">Often (Daily Exercise 3-5 days/week)</option>
-                                            <option value="1.725">Positive (Hard Work Out 6-7 days/week</option>
-                                            <option value="1.9">Passionate (Extreme Work Out)</option>
+                                            <option ${param.txtOpActivity == '1.2' ? 'selected' : ''} value="1.2">Rarely or never doing exercises</option>
+                                            <option ${param.txtOpActivity == '1.375' ? 'selected' : ''} value="1.375">Casual (Casual Exercise - 1-3 times/week)</option>
+                                            <option ${param.txtOpActivity == '1.55' ? 'selected' : ''} value="1.55">Often (Daily Exercise 3-5 days/week)</option>
+                                            <option ${param.txtOpActivity == '1.725' ? 'selected' : ''} value="1.725">Positive (Hard Work Out 6-7 days/week</option>
+                                            <option ${param.txtOpActivity == '1.9' ? 'selected' : ''} value="1.9">Passionate (Extreme Work Out)</option>
                                         </select>
                                     </div>
                                 </div>
@@ -318,127 +319,74 @@
 
 
             <!--Display food calculated-->
-            <!--Breakfast-->
-            <c:if test="${sessionScope.BREAKFAST != null}">
-                <c:if test="${not empty sessionScope.BREAKFAST}">
+            <c:if test="${sessionScope.RECOMMENDFOOD != null}">
+                <c:if test="${not empty sessionScope.RECOMMENDFOOD}">
                     <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+                        <c:set var="doc" value="${sessionScope.RECOMMENDFOOD}"/>
+
+                        <!--Food for breakfast-->
                         <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">BREAKFAST</span></h5>
-
                         <div class="w3-row-padding w3-padding-16 w3-center" id="foodForBreakfast">
-
-                            <c:set var="doc" value="${sessionScope.BREAKFAST}"/>
-                            <c:forEach var="list" items="${sessionScope.BREAKFAST}" varStatus="counter">
-                                <div class="w3-quarter">
-                                    <a href="${list.getHref()}"><img src="${list.getImage()}" alt="${list.getTitle()}" style="width:100%"></a>
-                                    <h3>${list.getTitle()}</h3>
-                                    <p>Carbohydrate: ${list.getCarbonhydrate()}<br/>
-                                        Calories: ${list.getCalories()}<br/>
-                                        Protein: ${list.getProtein()}<br/>
-                                        Fat: ${list.getFat()}<br/>
-                                        Fiber: ${list.getFiber()}</p><br/>
-                                    <input type="hidden" value="${list.getId()}" id="foodID" />
-                                    <a href="${list.getHref()}"><input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();"></a>
-                                </div>
-                                <div class="w3-threequarter"  id="cookingForBreakfastClient">
-                                    Material:<br/>
-
-                                    <hr/>
-                                    Method:<br/>
-                                </div>
-                            </c:forEach>
-
-                        </div>
-                    </div>
-                </c:if>
-            </c:if> 
-
-            <!--            <div class="w3-sand w3-grayscale w3-large">
-                            <div class="w3-container" id="menu">
-                                Live search 
-                                <div class="w3-content" style="max-width:1200px">
-            
-                                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SEARCH YOUR INGREDIENT</span></h5>
-            
-                                    <div class="w3-row w3-center w3-card w3-padding" ">
-                                        <input style="width: 80%;color:#a94442 " type="text" placeholder="Close" />
+                            <x:forEach select="$doc/foods/*" varStatus="counter" var="food">
+                                <c:if test="${counter.count lt 2}">
+                                    <div class="w3-quarter">
+                                        <a href="<x:out select="$food/href"/>"><img src="<x:out select="$food/image"/>" alt="<x:out select="$food/title"/>" style="width:100%"></a>
+                                        <h3><x:out select="$food/title"/></h3>
+                                        <p>Carbohydrate: <x:out select="$food/carbonhydrate"/><br/>
+                                            Calories: <x:out select="$food/calories"/><br/>
+                                            Protein: <x:out select="$food/protein"/><br/>
+                                            Fat: <x:out select="$food/fat"/><br/>
+                                            Fiber: <x:out select="$food/fiber"/></p><br/>
+                                        <input type="hidden" value="$food/id" id="foodID" />
+                                        <a href="<x:out select="$food/href"/>"><input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();"></a>
                                     </div>
-            
-                                    <div id="cookingForBreakfastClient" class="w3-container menu w3-padding-48 w3-card" style="display: none">
-            
-            
-            
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>-->
-
-
-
-            <!--Display Cooking Method-->
-            <!--            <div class=" w3-container w3-main w3-content w3-padding" style="width: 90%" id="cookingForBreakfast" style="display: none">
-            
+                                </c:if>
+                            </x:forEach>
                         </div>
-                        <div class="w3-main w3-content w3-padding" style="width: 100%; align-content: center" id="cookingForBreakfast" style="display: none">
-                            Display Cooking Method
-                            <div class="w3-row-padding w3-padding-16 w3-center" id="cookingForBreakfast" style="display: none">
-            
-                            </div>
-                        </div>-->
-            <!--Lunch-->
-            <c:if test="${sessionScope.LUNCH != null}">
-                <c:if test="${not empty sessionScope.LUNCH}">
-                    <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+
+                        <!--Food for lunch-->
                         <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">LUNCH</span></h5>
-
                         <div class="w3-row-padding w3-padding-16 w3-center" id="foodForLunch">
+                            <x:forEach select="$doc/foods/*" varStatus="counter" var="food">
+                                <c:if test="${counter.count lt 4 and counter.count >= 2}">
 
-                            <c:set var="doc" value="${sessionScope.LUNCH}"/>
-                            <c:forEach var="list" items="${sessionScope.LUNCH}" varStatus="counter">
-                                <div class="w3-quarter">
-                                    <a href="${list.getHref()}"><img src="${list.getImage()}" alt="${list.getTitle()}" style="width:100%"></a>
-                                    <h3>${list.getTitle()}</h3>
-                                    <p>Carbohydrate: ${list.getCarbonhydrate()}<br/>
-                                        Calories: ${list.getCalories()}<br/>
-                                        Protein: ${list.getProtein()}<br/>
-                                        Fat: ${list.getFat()}<br/>
-                                        Fiber: ${list.getFiber()}</p><br/>
-                                    <input type="hidden" value="${list.getId()}" id="foodID" />
-                                    <input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();">
-                                </div>
-                            </c:forEach>
-
+                                    <div class="w3-quarter">
+                                        <a href="<x:out select="$food/href"/>"><img src="<x:out select="$food/image"/>" alt="<x:out select="$food/title"/>" style="width:100%"></a>
+                                        <h3><x:out select="$food/title"/></h3>
+                                        <p>Carbohydrate: <x:out select="$food/carbonhydrate"/><br/>
+                                            Calories: <x:out select="$food/calories"/><br/>
+                                            Protein: <x:out select="$food/protein"/><br/>
+                                            Fat: <x:out select="$food/fat"/><br/>
+                                            Fiber: <x:out select="$food/fiber"/></p><br/>
+                                        <input type="hidden" value="$food/id" id="foodID" />
+                                        <a href="<x:out select="$food/href"/>"><input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();"></a>
+                                    </div>
+                                </c:if>
+                            </x:forEach>
                         </div>
-                    </div>
-                </c:if>
-            </c:if> 
 
-            <!--Dinner-->
-            <c:if test="${sessionScope.DINNER != null}">
-                <c:if test="${not empty sessionScope.DINNER}">
-                    <div class="w3-main w3-content w3-padding" style="max-width:1200px; align-content: center">
+                        <!--Food For Dinner-->
                         <h5 class="w3-left w3-padding-48"><span class="w3-tag w3-wide">DINNER</span></h5>
-
                         <div class="w3-row-padding w3-padding-16 w3-center" id="foodForDinner">
-
-                            <c:set var="doc" value="${sessionScope.DINNER}"/>
-                            <c:forEach var="list" items="${sessionScope.DINNER}" varStatus="counter">
-                                <div class="w3-quarter">
-                                    <a href="${list.getHref()}"><img src="${list.getImage()}" alt="${list.getTitle()}" style="width:100%"></a>
-                                    <h3>${list.getTitle()}</h3>
-                                    <p>Carbohydrate: ${list.getCarbonhydrate()}<br/>
-                                        Calories: ${list.getCalories()}<br/>
-                                        Protein: ${list.getProtein()}<br/>
-                                        Fat: ${list.getFat()}<br/>
-                                        Fiber: ${list.getFiber()}</p><br/>
-                                    <input type="hidden" value="${list.getId()}" id="foodID" />
-                                    <input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();">
-                                </div>
-                            </c:forEach>
-
+                            <x:forEach select="$doc/foods/*" varStatus="counter" var="food">
+                                <c:if test="${5 lt counter.count}">
+                                    <div class="w3-quarter">
+                                        <a href="<x:out select="$food/href"/>"><img src="<x:out select="$food/image"/>" alt="<x:out select="$food/title"/>" style="width:100%"></a>
+                                        <h3><x:out select="$food/title"/></h3>
+                                        <p>Carbohydrate: <x:out select="$food/carbonhydrate"/><br/>
+                                            Calories: <x:out select="$food/calories"/><br/>
+                                            Protein: <x:out select="$food/protein"/><br/>
+                                            Fat: <x:out select="$food/fat"/><br/>
+                                            Fiber: <x:out select="$food/fiber"/></p><br/>
+                                        <input type="hidden" value="$food/id" id="foodID" />
+                                        <a href="<x:out select="$food/href"/>"><input type="button" id="howToCookOpen" class="btn btn-success" value="How to cook" onclick="cooking();"></a>
+                                    </div>
+                                </c:if>
+                            </x:forEach>
                         </div>
                     </div>
                 </c:if>
-            </c:if> 
+            </c:if>
 
             <!-- End page content -->
         </div>

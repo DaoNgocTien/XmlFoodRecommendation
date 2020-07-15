@@ -5,6 +5,8 @@
  */
 package tien.webservice.service;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -17,6 +19,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import tien.webservice.Material;
 
@@ -66,6 +69,16 @@ public class MaterialFacadeREST extends AbstractFacade<Material> {
     @Override
     @Produces({MediaType.APPLICATION_XML + "; charset=UTF-8", MediaType.APPLICATION_JSON + "; charset=UTF-8"})
     public List<Material> findAll() {
+        LocalDateTime now = LocalDateTime.now();
+        int first = now.getMinute();
+        int second = now.getSecond();
+        for (int i = 0; i < 50000; i++) {
+super.findAll();
+        }
+        now = LocalDateTime.now();
+        int first1 = now.getMinute();
+        int second2 = now.getSecond();
+        System.out.println("Minute: " + (first - first1) + "\nSecond: " + (second - second2));
         return super.findAll();
     }
 
@@ -86,6 +99,20 @@ public class MaterialFacadeREST extends AbstractFacade<Material> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+
+    @Path("/searchFoodByLikeName")
+    @GET
+    @Produces({MediaType.APPLICATION_XML + "; charset=UTF-8", MediaType.APPLICATION_JSON + "; charset=UTF-8"})
+    public List<Material> searchFoodByLikeName(@QueryParam("txtSearch") String txtSearch) {
+        if (txtSearch.equalsIgnoreCase("empty")) {
+            return super.findRange(new int[]{0, 99});
+        }
+        List<Material> result = (List<Material>) getEntityManager()
+                .createQuery("SELECT m FROM Material m Where m.foodname LIKE :search")
+                .setParameter("search", txtSearch)
+                .getResultList();
+        return result;
     }
 
 }

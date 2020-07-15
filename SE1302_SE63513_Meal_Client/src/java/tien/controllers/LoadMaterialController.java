@@ -24,7 +24,7 @@ import tien.utils.DOMUtils;
  */
 public class LoadMaterialController extends HttpServlet {
 
-    private static final String SUCCESS = "dataindex.jsp";
+    private static final String SUCCESS = "DisplayMaterialController";
     private static final String ERROR = "error.jsp";
     private static final ConstantsWebServiceWareHouse CONSTANT = new ConstantsWebServiceWareHouse();
 
@@ -32,35 +32,53 @@ public class LoadMaterialController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String url = ERROR;
-        try {
-//            URL url2 = new URL(constant.WEB_SERVICE_BASE_URI + constant.GET_ALL_MATERIAL);
-//            URLConnection urlConnection = url2.openConnection();
-//            String line = "";
-//            String res = "";
-//            try (InputStreamReader isr = new InputStreamReader(urlConnection.getInputStream(), StandardCharsets.UTF_8);
-//                    BufferedReader br = new BufferedReader(isr)) {
-//                while ((line = br.readLine()) != null) {
-//                    line = line.trim();
-//                    line = line.replace(" standalone=\"yes\"", "").replace("><", ">\n<");
-//                    res += line + "\n";
-//                    System.out.println(line + "\n");
-//                }
-//            }
+//        try {
+////            URL url2 = new URL(constant.WEB_SERVICE_BASE_URI + constant.GET_ALL_MATERIAL);
+////            URLConnection urlConnection = url2.openConnection();
+////            String line = "";
+////            String res = "";
+////            try (InputStreamReader isr = new InputStreamReader(urlConnection.getInputStream(), StandardCharsets.UTF_8);
+////                    BufferedReader br = new BufferedReader(isr)) {
+////                while ((line = br.readLine()) != null) {
+////                    line = line.trim();
+////                    line = line.replace(" standalone=\"yes\"", "").replace("><", ">\n<");
+////                    res += line + "\n";
+////                    System.out.println(line + "\n");
+////                }
+////            }
+//
+//            Client client = ClientBuilder.newClient();
+//            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.GET_ALL_MATERIAL);
+//            String res = wt.request().get(String.class);
+//            
+//            res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
+////            res = res.replace("><", ">\n<");
+////            System.out.println(res);
+//            HttpSession session = request.getSession();
+//            Document doc = DOMUtils.parseXMLStringIntoDOM(res);
+//            
+//            session.setAttribute("DOMMATERIAL", doc);
+//            session.setAttribute("MATERIALSTRING", res);
+//            System.out.println("LoadMaterialController successfully");
+//            url = SUCCESS;
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            request.getRequestDispatcher(url).forward(request, response);
+//        }
 
+        try {
             Client client = ClientBuilder.newClient();
-            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.GET_ALL_MATERIAL);
+            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.GET_ALL_MATERIAL + "/0/99");
             String res = wt.request().get(String.class);
-            
             res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
-//            res = res.replace("><", ">\n<");
-//            System.out.println(res);
+//            Document doc = DOMUtils.parseXMLStringIntoDOM(res);
+
             HttpSession session = request.getSession();
-            Document doc = DOMUtils.parseXMLStringIntoDOM(res);
-            
-            session.setAttribute("DOMMATERIAL", doc);
             session.setAttribute("MATERIALSTRING", res);
-            System.out.println("LoadMaterialController successfully");
             url = SUCCESS;
+
+            System.out.println("LoadMaterialController Successfully");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

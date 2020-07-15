@@ -36,33 +36,33 @@ public class CrawlFoodController extends HttpServlet {
 
     public static void main(String[] args) {
         try {
-//            String content = "";
-//
-//            //  Pre process html content into line
-//            content = PreProcessHrefHtmlIntoXML.preProcessHrefHtmlIntoXML();
-//
-//            //  Write content into xml file to check
-//            File rawFoodXML = new File(REAL + RAW_FOOD);
-//            WriteIntoFile.writeIntoFile(rawFoodXML, content);
-//
-//            //  Convert xml file into object by StAX
-//            ConvertXMLIntoObjectByStAX StAX = new ConvertXMLIntoObjectByStAX();
-//            List<Food> listOld = StAX.convertXMLFoodIntoObjectByStAX(rawFoodXML);
-//
-//            //  Insert food into database
-//            FoodDAO dao = new FoodDAO();
-//            for (Food food : listOld) {
-//                dao.insertFood(food);
-//            }
+            String content = "";
 
-//            //  Select all food with id
-//            List<Food> list = dao.selectFood();
+            //  Pre process html content into line
+            content = PreProcessHrefHtmlIntoXML.preProcessHrefHtmlIntoXML();
+
+            //  Write content into xml file to check
+            File rawFoodXML = new File(REAL + RAW_FOOD);
+            WriteIntoFile.writeIntoFile(rawFoodXML, content);
+
+            //  Convert xml file into object by StAX
+            ConvertXMLIntoObjectByStAX StAX = new ConvertXMLIntoObjectByStAX();
+            List<Food> listOld = StAX.convertXMLFoodIntoObjectByStAX(rawFoodXML);
+
+            //  Insert food into database
+            FoodDAO dao = new FoodDAO();
+            for (Food food : listOld) {
+                dao.insertFood(food);
+            }
+
+            //  Select all food with id
+            List<Food> list = dao.selectFood();
 //            //  for each food, get the cooking method and material and energy, then update food
 //            MaterialDAO materialDao = new MaterialDAO();
 //            List<Material> listMaterial = materialDao.selectMaterial();
 //            for (int i = 1; i < list.size(); i++) {
 //                Food food = list.get(i);
-//                list.remove(i);
+
 //                PreProcessDetailHtmlIntoXML.preProcessDetailHtmlIntoXML(listMaterial, list.get(i));
 //                dao.updateFood(food);
 //            }

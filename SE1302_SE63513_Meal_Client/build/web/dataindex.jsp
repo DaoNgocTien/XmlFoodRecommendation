@@ -92,52 +92,94 @@
 //            }
 
             const pagination = command => {
-                const domMaterial = localStorage.getItem("MATERIALSTRING");
+//                Material in localStorage
+
+                const domMaterial = localStorage.getItem("MATERIAL_DISPLAY");
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(domMaterial, "text/xml");
-
+                console.log(xmlDoc.getElementsByTagName("foodname").length);
+//                Current Page
                 let txtPageDirection = document.querySelector('#txtPageDirection');
                 let pageNumber = parseInt(txtPageDirection.innerHTML);
+
+//                Current Content in display
                 let searchIngredient = document.querySelector('#searchIngredientContent');
-                searchIngredient.innerHTML = "";
+
+
+//                Content will be shown
                 let content;
+
+//                Check command
                 if (command === "next") {
-                    if (pageNumber < 25) {
+                    if (pageNumber < 10) {
+                        document.querySelector("#searchIngredientPagination").style.display = "block";
                         pageNumber++;
                     }
                 } else if (command === "back") {
                     if (pageNumber > 1) {
+                        document.querySelector("#searchIngredientPagination").style.display = "block";
                         pageNumber--;
                     }
+                } else if (command === "onload") {
+                    document.querySelector("#searchIngredientPagination").style.display = "none";
+                    pageNumber = 1;
                 }
+
                 txtPageDirection.innerHTML = pageNumber;
                 content = "";
-                for (var i = pageNumber * 10; i < (pageNumber + 1) * 10; i++) {
-                    content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
-                            + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
-                            + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
-                            + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
-                            + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
-                            + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+                searchIngredient.innerHTML = "";
+
+                if (pageNumber === 1) {
+                    for (var i = 0; i < xmlDoc.getElementsByTagName("foodname").length; i++) {
+                        if (i < 10) {
+                            content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
+                                    + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
+                                    + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
+                                    + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
+                                    + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
+                                    + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+                        }
+
+                    }
+                } else {
+                    for (var i = (pageNumber - 1) * 10; i < pageNumber * 10; i++) {
+                        content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
+                                + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
+                                + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
+                                + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
+                                + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
+                                + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+                    }
                 }
+
                 searchIngredient.innerHTML = content;
             };
 
 
             //  Get List Food and List Material from database, then redirect to homepage
             const saveData = () => {
+                localStorage.setItem("MATERIAL_DISPLAY", "");
+                localStorage.setItem("MATERIALSTRING", "");
             <c:if test="${sessionScope.MATERIALSTRING != null}">
                 <c:if test="${not empty sessionScope.MATERIALSTRING}">
-//                document.querySelector("#MATERIALSTRING").innerHTML = "${sessionScope.MATERIALSTRING}";
-                const domMaterial = localStorage.getItem("MATERIALSTRING");
-                if (!domMaterial) {
-                    localStorage.setItem("MATERIALSTRING", "${sessionScope.MATERIALSTRING}");
-//                    alert("!       domMaterial");
-                } else {
-//                    alert("domMaterial");
-                }
+//                const domMaterial = localStorage.getItem("MATERIALSTRING");
+//                if (!domMaterial) {
+                localStorage.setItem("MATERIALSTRING", "${sessionScope.MATERIALSTRING}");
+//                } else {
+//                }
                 </c:if>
             </c:if>
+                pagination('onload');
+            <c:if test="${sessionScope.MATERIAL_DISPLAY != null}">
+                <c:if test="${not empty sessionScope.MATERIAL_DISPLAY}">
+//                let displayMaterial = localStorage.getItem("MATERIAL_DISPLAY");
+//                if (!displayMaterial) {
+                localStorage.setItem("MATERIAL_DISPLAY", "${sessionScope.MATERIAL_DISPLAY}");
+//                } else {
+//                }
+                </c:if>
+            </c:if>
+
             };
 
         </script>
@@ -189,41 +231,97 @@
             };
 
             const liveSearch = () => {
+//                Search value
                 let search = document.querySelector("#txtLiveSearch").value;
 
-                const domMaterial = localStorage.getItem("MATERIALSTRING");
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(domMaterial, "text/xml");
+//                Search List
+                let domMaterial = localStorage.getItem("MATERIALSTRING");
+                let parser = new DOMParser();
+                let xmlDoc = parser.parseFromString(domMaterial, "text/xml");
 
+//                Display List
+                let displayMaterial = localStorage.getItem("MATERIAL_DISPLAY");
+                let displayXML = parser.parseFromString(displayMaterial, "text/xml");
+
+//                Display area for searched result
                 let searchIngredient = document.querySelector('#searchIngredientContent');
-                document.querySelector('#searchIngredientPagination').style.display = "none";
-                searchIngredient.innerHTML = "";
-                let content = "";
-                let count = 0;
-                for (var i = 0; i < 250; i++) {
-                    let foodname = xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue;
+                if (search !== "" && search) {
+//                    alert(search)
+                    searchIngredient.innerHTML = "";
+//                document.querySelector('#searchIngredientPagination').style.display = "none";
 
-                    if (foodname.indexOf(search) > -1) {
-                        console.log(foodname);
-                        count++;
-                        if (count < 11) {
-                            content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
-                                    + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
-                                    + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
-                                    + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
-                                    + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
-                                    + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
-
+//                Content to display
+//                let content = "";
+                    console.log(displayXML.getElementsByTagName("foodname").length);
+                    displayXML.getElementsByTagName("materials")[0].textContent = "";
+//                for (var i = 0; i < displayXML.getElementsByTagName("material").length; i++) {
+//                    let x = displayXML.getElementsByTagName("material")[i];
+//                    x.parentNode.removeChild(x);
+//                }
+                    console.log(displayXML.getElementsByTagName("material").length);
+                    for (var i = 0; i < xmlDoc.getElementsByTagName("foodname").length; i++) {
+                        let foodname = xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue;
+                        if (foodname.indexOf(search) > -1) {
+                            let clone = xmlDoc.getElementsByTagName("material")[i].cloneNode(true);
+                            displayXML.getElementsByTagName("materials")[0].appendChild(clone);
                         }
                     }
+//                    console.log(displayXML.getElementsByTagName("material").length);
+//                    console.log(JSON.stringify(displayXML.getElementsByTagName("materials")[0]);
+                    localStorage.setItem("MATERIAL_DISPLAY", displayXML.getElementsByTagName("materials")[0].outerHTML);
+                    pagination('onload');
                 }
-                if (search !== "" && search) {
-                    searchIngredient.innerHTML = content;
-                } else {
-                    document.querySelector('#searchIngredientPagination').style.display = "block";
-                    document.querySelector('#txtPageDirection').innerHTML = "2";
-                    pagination('back');
-                }
+//                let cloneNode = xmlDoc.getElementsByTagName("material")[2].cloneNode(true);
+//                displayXML.getElementsByTagName("materials")[0].appendChild(cloneNode);
+//                for (var i = 0; i < xmlDoc.getElementsByTagName("foodname").length; i++) {
+//                    let foodname = xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue;
+//                    if (foodname.indexOf(search) > -1) {
+//                        let resultNode = xmlDoc.getElementsByTagName("material")[i];
+//                        cloneNode = resultNode.cloneNode(true);
+//                        displayXML.getElementsByTagName("materials").appendChild(cloneNode);
+//                    }
+//                }
+//                int count = 0;
+//                for (var i = 0; i < displayXML.getElementsByTagName("foodname").length; i++) {
+
+//                    if (count < 11) {
+//                    content += "<h5>" + cloneNode.getElementsByTagName("foodname")[0].childNodes[0].nodeValue + "</h5><br/>"
+//                            + "<p class='w3-text-grey'>Carbohydrate: " + cloneNode.getElementsByTagName("carbonhydrate")[0].childNodes[0].nodeValue
+//                            + "Calories: " + cloneNode.getElementsByTagName("calories")[0].childNodes[0].nodeValue
+//                            + "Protein: " + cloneNode.getElementsByTagName("protein")[0].childNodes[0].nodeValue
+//                            + "Fat: " + cloneNode.getElementsByTagName("fat")[0].childNodes[0].nodeValue
+//                            + "Fiber: " + cloneNode.getElementsByTagName("fiber")[0].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+
+
+//                    }
+//                }
+
+//                let count = 0;
+//                for (var i = 0; i < 100; i++) {
+//                    let foodname = xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue;
+//
+//                    if (foodname.indexOf(search) > -1) {
+//                        console.log(foodname);
+//                        count++;
+//                        if (count < 11) {
+//                            content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
+//                                    + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
+//                                    + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
+//                                    + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
+//                                    + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
+//                                    + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+//
+//                        }
+//                    }
+//                }
+//                if (search !== "" && search) {
+//                    searchIngredient.innerHTML = content;
+//                }
+//                else {
+//                    document.querySelector('#searchIngredientPagination').style.display = "block";
+//                    document.querySelector('#txtPageDirection').innerHTML = "2";
+//                    pagination('back');
+//                }
             }
         </script>
         <!-- !PAGE CONTENT! -->
