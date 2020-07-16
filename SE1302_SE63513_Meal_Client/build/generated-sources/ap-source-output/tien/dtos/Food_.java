@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import tien.dtos.CustomerRecommendationFood;
 import tien.dtos.FoodMaterial;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-16T10:42:55")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-16T10:56:52")
 @StaticMetamodel(Food.class)
 public class Food_ { 
 
