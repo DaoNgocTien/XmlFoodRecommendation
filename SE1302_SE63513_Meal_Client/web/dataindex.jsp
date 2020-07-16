@@ -61,35 +61,40 @@
         <script>
 
 
-//            const getFoodSample = async () => {
-//                var xhr = new XMLHttpRequest();
-//                return new Promise(function (resolve, reject) {
-//                    xhr.onreadystatechange = function () {
-//                        if (xhr.readyState === 4) {
-//                            if (xhr.status >= 300) {
-//                                reject("Error, status code = " + xhr.status)
-//                            } else {
-//                                resolve(xhr.responseText);
-//                            }
-//                        }
-//                    }
-//                    xhr.onerror = function (e) {
-//                        console.error(xhr.statusText);
-//                    };
-//                    xhr.open('get', 'http://localhost:8080/SE1302_Meal_Webservice/webresources/tien.webservice.material/', true);
-//                    xhr.send();
-//                });
-//            }
-//
-//            const getFood = async () => {
+            const getFoodSample = async () => {
+                var xhr = new XMLHttpRequest();
+                return new Promise(function (resolve, reject) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4) {
+                            if (xhr.status >= 300) {
+                                reject("Error, status code = " + xhr.status)
+                            } else {
+                                resolve(xhr.responseText);
+                            }
+                        }
+                    }
+//                    xhr.open('get', 'DisplayMaterialController?txtSearch=' + document.querySelector("#txtLiveSearch").value, true);
+                    xhr.open('get', 'http://localhost:8080/SE1302_Meal_Webservice/webresources/tien.webservice.material/searchFoodByLikeName/' + document.querySelector("#txtLiveSearch").value, true);
+                    xhr.send(null);
+                });
+            }
+
+            const getFood = async () => {
 //                alert("getFood")
-//                try {
-//                    let food = await getFoodSample();
+                try {
+                    let food = await getFoodSample();
+//                    window.location.href = "http://localhost:8084/SE1302_SE63513_Meal_Client/dataindex.jsp";
 //                    console.log(food);
-//                } catch (err) {
-//                    console.log(err);
-//                }
-//            }
+//                    console.log(food.responseText);
+//                    console.log(typeof(food));
+                    food = food.replace('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>', "");
+//                    console.log(food);
+                    localStorage.setItem("MATERIAL_DISPLAY", food);
+                    pagination('onload');
+                } catch (err) {
+                    console.log(err);
+                }
+            }
 
             const pagination = command => {
 //                Material in localStorage
@@ -158,8 +163,8 @@
 
             //  Get List Food and List Material from database, then redirect to homepage
             const saveData = () => {
-                localStorage.setItem("MATERIAL_DISPLAY", "");
-                localStorage.setItem("MATERIALSTRING", "");
+                localStorage.removeItem("MATERIAL_DISPLAY");
+                localStorage.removeItem("MATERIALSTRING");
             <c:if test="${sessionScope.MATERIALSTRING != null}">
                 <c:if test="${not empty sessionScope.MATERIALSTRING}">
 //                const domMaterial = localStorage.getItem("MATERIALSTRING");
@@ -169,14 +174,17 @@
 //                }
                 </c:if>
             </c:if>
-                pagination('onload');
+
             <c:if test="${sessionScope.MATERIAL_DISPLAY != null}">
                 <c:if test="${not empty sessionScope.MATERIAL_DISPLAY}">
 //                let displayMaterial = localStorage.getItem("MATERIAL_DISPLAY");
 //                if (!displayMaterial) {
+//                alert("${sessionScope.MATERIAL_DISPLAY}");
                 localStorage.setItem("MATERIAL_DISPLAY", "${sessionScope.MATERIAL_DISPLAY}");
 //                } else {
 //                }
+
+                pagination('onload');
                 </c:if>
             </c:if>
 
@@ -268,7 +276,12 @@
                     }
 //                    console.log(displayXML.getElementsByTagName("material").length);
 //                    console.log(JSON.stringify(displayXML.getElementsByTagName("materials")[0]);
-                    localStorage.setItem("MATERIAL_DISPLAY", displayXML.getElementsByTagName("materials")[0].outerHTML);
+                    if (displayXML.getElementsByTagName("material").length < 1) {
+                        getFood();
+                    } else {
+                        localStorage.setItem("MATERIAL_DISPLAY", displayXML.getElementsByTagName("materials")[0].outerHTML);
+                    }
+
                     pagination('onload');
                 }
 //                let cloneNode = xmlDoc.getElementsByTagName("material")[2].cloneNode(true);
@@ -335,7 +348,7 @@
                     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SEARCH YOUR INGREDIENT</span></h5>
 
                     <div class="w3-row w3-center w3-card w3-padding w3-dark-grey"  id="myLink" >
-                        <input style="width: 80%;color:#a94442 " id="txtLiveSearch" type="text" placeholder="What do you search for" onmousedown="liveSearch();" onkeyup="liveSearch();"/>
+                        <input style="width: 80%;color:#a94442 " id="txtLiveSearch" value="${param.txtLiveSearch}" type="text" placeholder="What do you search for" onmousedown="liveSearch();" onkeyup="liveSearch();"/>
                     </div>
 
                     <div id="searchIngredient" class="w3-container menu w3-padding-48 w3-card" style="display: block">

@@ -1,0 +1,406 @@
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="ASSETS/StyleSheet.css">
+        <style>
+            body, html {
+                height: 100%;
+                font-family: "Inconsolata", sans-serif;
+            }
+
+            .bgimg {
+                background-position: center;
+                background-size: cover;
+                background-image: url("ASSETS/IMAGE/home-design.jpg");
+                min-height: 75%;
+            }
+
+            .menu {
+                display: none;
+            }
+            /* vietnamese */
+            @font-face {
+                font-family: 'Inconsolata';
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                src: url("ASSETS/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRL2l2eY(1).woff2") format('woff2');
+                unicode-range: U0102-0103, U0110-0111, U0128-0129, U0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+            }
+            /* latin-ext */
+            @font-face {
+                font-family: 'Inconsolata';
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                src: url("ASSETS/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRP2l2eY.woff2") format('woff2');
+                unicode-range: U0100-024F, U0259, U1E00-1EFF, U2020, U20A0-20AB, U20AD-20CF, U2113, U2C60-2C7F, U+A720-A7FF;
+            }
+            /* latin */
+            @font-face {
+                font-family: 'Inconsolata';
+                font-style: normal;
+                font-weight: 400;
+                font-stretch: 100%;
+                src: url("ASSETS/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WR32lw.woff2") format('woff2');
+                unicode-range: U0000-00FF, U+0131, U0152-0153, U02BB-02BC, U+02C6, U+02DA, U+02DC, U2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <script>
+
+
+
+            const pagination = command => {
+                const domMaterial = localStorage.getItem("MATERIALSTRING");
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(domMaterial, "text/xml");
+
+                let txtPageDirection = document.querySelector('#txtPageDirection');
+                let pageNumber = parseInt(txtPageDirection.innerHTML);
+                let searchIngredient = document.querySelector('#searchIngredientContent');
+                searchIngredient.innerHTML = "";
+                let content;
+                if (command === "next") {
+                    if (pageNumber < 25) {
+                        pageNumber++;
+                    }
+                } else if (command === "back") {
+                    if (pageNumber > 1) {
+                        pageNumber--;
+                    }
+                }
+                txtPageDirection.innerHTML = pageNumber;
+                content = "";
+                for (var i = pageNumber * 10; i < (pageNumber + 1) * 10; i++) {
+                    content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
+                            + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
+                            + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
+                            + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
+                            + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
+                            + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+                }
+                searchIngredient.innerHTML = content;
+            };
+
+
+            //  Get List Food and List Material from database, then redirect to homepage
+            const saveData = () => {
+
+            };
+
+        </script>
+    </head>
+    <body onload="saveData()">
+
+        <!-- Links (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+                <div class="w3-col s3">
+                    <a href="index.jsp" class="w3-button w3-block w3-black">ABOUT US</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="calculate.jsp" class="w3-button w3-block w3-black">JUST US</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="dataindex.jsp" class="w3-button w3-block w3-black">ONLY US</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="about.jsp" class="w3-button w3-block w3-black">STILL ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Tabbed Menu
+            const openMenu = (aLink, content) => {
+                document.querySelector("#" + aLink).classList.contains("w3-dark-grey") ?
+                        document.querySelector("#" + aLink).classList.remove("w3-dark-grey") :
+                        document.querySelector("#" + aLink).classList.add("w3-dark-grey");
+                document.querySelector("#" + content).style.display === "none" ?
+                        document.querySelector("#" + content).style.display = "block" :
+                        document.querySelector("#" + content).style.display = "none";
+
+            };
+
+            const liveSearch = () => {
+                let search = document.querySelector("#txtLiveSearch").value;
+
+                const domMaterial = localStorage.getItem("MATERIALSTRING");
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(domMaterial, "text/xml");
+
+                let searchIngredient = document.querySelector('#searchIngredientContent');
+                document.querySelector('#searchIngredientPagination').style.display = "none";
+                searchIngredient.innerHTML = "";
+                let content = "";
+                let count = 0;
+                for (var i = 0; i < 250; i++) {
+                    let foodname = xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue;
+
+                    if (foodname.indexOf(search) > -1) {
+                        console.log(foodname);
+                        count++;
+                        if (count < 11) {
+                            content += "<h5>" + xmlDoc.getElementsByTagName("foodname")[i].childNodes[0].nodeValue + "</h5><br/>"
+                                    + "<p class='w3-text-grey'>Carbohydrate: " + xmlDoc.getElementsByTagName("carbonhydrate")[i].childNodes[0].nodeValue
+                                    + "Calories: " + xmlDoc.getElementsByTagName("calories")[i].childNodes[0].nodeValue
+                                    + "Protein: " + xmlDoc.getElementsByTagName("protein")[i].childNodes[0].nodeValue
+                                    + "Fat: " + xmlDoc.getElementsByTagName("fat")[i].childNodes[0].nodeValue
+                                    + "Fiber: " + xmlDoc.getElementsByTagName("fiber")[i].childNodes[0].nodeValue + "</p> <br/> <hr/> <br/>";
+
+                        }
+                    }
+                }
+                if (search !== "" && search) {
+                    searchIngredient.innerHTML = content;
+                } else {
+                    document.querySelector('#searchIngredientPagination').style.display = "block";
+                    document.querySelector('#txtPageDirection').innerHTML = "2";
+                    pagination('back');
+                }
+            }
+        </script>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-sand w3-grayscale w3-large">
+
+            <!-- Menu Container -->
+            <div class="w3-container" id="menu">
+                <script>
+                    const countDownTime = (id, content) => {
+
+
+                        let countDownDate = 15;
+
+                        let x = setInterval(function () {
+
+
+                            document.getElementById(id).innerHTML = "Countdown time: " + countDownDate + " s ";
+                            countDownDate--;
+
+                            if (countDownDate < 0) {
+                                clearInterval(x);
+                                document.getElementById(id).innerHTML = content;
+                            }
+                            // Output the result in an element with id="demo"
+
+                            // If the count down is over, write some text 
+
+                        }, 1000);
+                    }
+                </script>
+
+                <!--The index of ingredient-->
+                <div class="w3-content" style="max-width:1200px">
+
+                    <div class="col-md-4">
+                        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE INDEX OF BENEFIT</span></h5>
+
+                        <!--EGG-->
+                        <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('eggLink', 'egg');
+                                countDownTime('egg', 'Storage space is bigger than ever!')" id="eggLink">
+                            <a>
+                                <div class=" s6 tablink">BENEFIT NUMBER 1</div>
+                            </a>
+
+                        </div>
+
+                        <div id="egg" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
+
+                        </div> 
+
+                        <br>
+                        <!--PORK-->
+                        <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('porkLink', 'pork'); countDownTime('pork', 'Book printing cost will reduce dramatically!')" id="porkLink">
+                            <a>
+                                <div class=" s6 tablink">BENEFIT NUMBER 2</div>
+                            </a>
+
+                        </div>
+
+                        <div id="pork" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+
+                        </div> 
+
+                        <br>
+                        <!--BEEF-->
+                        <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('beefLink', 'beef'); countDownTime('beef', 'Environmental protection!')" id="beefLink">
+                            <a>
+                                <div class=" s6 tablink">BENEFIT NUMBER 3</div>
+                            </a>
+
+                        </div>
+
+                        <div id="beef" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                        </div> 
+
+                        <br>
+                        <!--CHICKEN-->
+                        <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('chickenLink', 'chicken'); countDownTime('chicken', 'Anywhere - especially any continents - anytime!')" id="chickenLink">
+                            <a>
+                                <div class=" s6 tablink">BENEFIT NUMBER 4</div>
+                            </a>
+
+                        </div>
+
+                        <div id="chicken" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                        </div> 
+
+                        <br>
+                        <!--DUCK-->
+                        <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('duckLink', 'duck');countDownTime('duck', 'Preserve books and sources of knowledge very good!')" id="duckLink">
+                            <a>
+                                <div class=" s6 tablink">BENEFIT NUMBER 5</div>
+                            </a>
+
+                        </div>
+
+                        <div id="duck" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+
+                        </div> 
+
+                        <!--                        <br>
+                                                Beans, rice, fruits, seaweed, corn, sweet potatoes, .., and spices
+                                                <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('beanLink', 'bean');" id="beanLink">
+                                                    <a>
+                                                        <div class=" s6 tablink">Beans, rice, fruits, seaweed, corn, sweet potatoes, .., and spices</div>
+                                                    </a>
+                        
+                                                </div>
+                        
+                                                <div id="bean" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                                                    <img src="ASSETS/IMAGE/6.JPG" style="width:100%;max-width:1000px;margin-top:32px;">
+                                                </div> 
+                        
+                                               
+                        
+                        -->
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <!--The index of food-->
+                        <div class="w3-content" style="max-width:700px">
+
+                            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE INDEX OF GOOGLE</span></h5>
+                            <!--Vegetarian dishes-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('testBeanLink', 'testBean');" id="testBeanLink">
+                                <a>
+                                    <div class=" s6 tablink">GOOLE BOOK / GOOGLE SEARCH BOOK</div>
+                                </a>
+
+                            </div>
+                            <div id="testBean" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                                <img src="ASSETS/IMAGE/1280px-Google_page_brin.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+                                <img src="ASSETS/IMAGE/Googleplexsouthsidesecondangle.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+                                <img src="ASSETS/IMAGE/1280px-Google_Book_Search_-_notice_board_at_michigan_university_library.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+                                <br/>
+                                <p>
+                                    <br/>
+                                    Google estimated in 2010 that there were about 130 million distinct titles in the world, and stated that it intended to scan all of them.As of October 2019, Google celebrated 15 years of Google Books and provided the number of scanned books as more than 40 million titles.
+                                    <br/>
+                                    'https://en.wikipedia.org/wiki/'
+                                </p>
+                            </div> 
+                            <br> <br>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!--The index of food-->
+                        <div class="w3-content" style="max-width:700px">
+
+                            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE INDEX OF MONOPOLY</span></h5>
+
+                            <!--Vegetarian dishes-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('vegeFoodLink', 'vegeFood');countDownTime('vegeFood', 'Hold copyrighted books!')" id="vegeFoodLink">
+                                <a>
+                                    <div class=" s6 tablink">First time monopoly</div>
+                                </a>
+
+                            </div>
+
+                            <div id="vegeFood" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                            </div> 
+
+                            <br>
+                            <!--Teas - Sticky rice-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('teaFoodLink', 'teaFood');countDownTime('teaFood', 'Hold right to access books!<br/><br/>Through the project, library books were being digitized somewhat indiscriminately regardless of copyright status, which led to a number of lawsuits against Google')" id="teaFoodLink">
+                                <a>
+                                    <div class=" s6 tablink">Second time monopoly</div>
+                                </a>
+
+                            </div>
+
+                            <div id="teaFood" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                            </div> 
+
+                            <br>
+                            <!--Folk cakes - Cakes-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('cakeFoodLink', 'cakeFood');countDownTime('cakeFood', 'The CEO / Chairman / Man in-charge can be replaced anytime!')" id="cakeFoodLink">
+                                <a>
+                                    <div class=" s6 tablink">Third time monopoly</div>
+                                </a>
+
+                            </div>
+
+                            <div id="cakeFood" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                            </div> 
+
+                            <br>
+                            <!--Beverage - Beer-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('beerFoodLink', 'beerFood');countDownTime('beerFood', 'Put non-copyrighted books into their storage! <br/><br/>Google argued that it was preserving *orphaned works* – books still under copyright, but whose copyright holders could not be located')" id="beerFoodLink">
+                                <a>
+                                    <div class=" s6 tablink">Fourth time monopoly</div>
+                                </a>
+
+                            </div>
+
+                            <div id="beerFood" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                            </div> 
+
+                            <br>
+                            <!--Vegetables and fruits-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('fruitLink', 'fruit');countDownTime('fruit', 'Paying for accessing the biggest library - Library of paragraphs - of mankind!')" id="fruitLink">
+                                <a>
+                                    <div class=" s6 tablink">Fifth time monopoly</div>
+                                </a>
+
+                            </div>
+                            <div id="fruit" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                            </div>
+                            <br>
+                            <!--SEAFOOD-->
+                            <div class="w3-row w3-center w3-card w3-padding" onclick="openMenu('seafoodLink', 'seafood');countDownTime('seafood', 'Manipulate the book content!<br/><br/>Google won the case unanimously based on the argument that they were not showing people the full texts but instead snippets, and they are not allowing people to illegally read the book.')" id="seafoodLink">
+                                <a>
+                                    <div class=" s6 tablink">Sixth time monopoly</div>
+                                </a>
+
+                            </div>
+
+                            <div id="seafood" class="w3-container menu w3-padding-48 w3-card" style="display: none">
+                                <img src="ASSETS/IMAGE/7.JPG" style="width:100%;max-width:1000px;margin-top:32px;">
+                            </div>
+                            <br> <br>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- End page content -->
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+            <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">deSigning</a></p>
+        </footer>
+
+
+
+
+
+    </body></html>

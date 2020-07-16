@@ -31,25 +31,25 @@ public class DisplayMaterialController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String url = ERROR;
         try {
-            String search = "empty";
-            if (request.getParameter("txtSearch") != null) {
-                search = request.getParameter("txtSearch");
-            }
-            Client client = ClientBuilder.newClient();
-            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.SEARCH_MATERIAL);
-            String res = wt.queryParam("txtSearch", search).request().get(String.class);
-            res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
-//            res = res.replace("><", ">\n<");
-            
-            HttpSession session = request.getSession();
-            session.setAttribute("MATERIAL_DISPLAY", res);
-
+//            String search = "empty";
+//            if (request.getParameter("txtSearch") != null) {
+//                search = request.getParameter("txtSearch");
+//            }
+//            Client client = ClientBuilder.newClient();
+//            WebTarget wt = client.target(CONSTANT.WEB_SERVICE_BASE_URI).path(CONSTANT.SEARCH_MATERIAL);
+//            String res = wt.queryParam("txtSearch", search).request().get(String.class);
+//            res = res.replace("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>", "");
+////            res = res.replace("><", ">\n<");
+////            System.out.println(res);
+//            HttpSession session = request.getSession();
+//            session.setAttribute("MATERIAL_DISPLAY", res);
+//            System.out.println(session.getAttribute("MATERIAL_DISPLAY"));
             url = SUCCESS;
-//            System.out.println(res);
             System.out.println("DisplayMaterialController Successfully");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+
             request.getRequestDispatcher(url).forward(request, response);
         }
     }

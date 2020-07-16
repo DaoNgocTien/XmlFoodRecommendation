@@ -6,7 +6,6 @@
 package tien.webservice.service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -105,14 +104,29 @@ super.findAll();
     @GET
     @Produces({MediaType.APPLICATION_XML + "; charset=UTF-8", MediaType.APPLICATION_JSON + "; charset=UTF-8"})
     public List<Material> searchFoodByLikeName(@QueryParam("txtSearch") String txtSearch) {
+        System.out.println(txtSearch);
         if (txtSearch.equalsIgnoreCase("empty")) {
             return super.findRange(new int[]{0, 99});
         }
         List<Material> result = (List<Material>) getEntityManager()
                 .createQuery("SELECT m FROM Material m Where m.foodname LIKE :search")
-                .setParameter("search", txtSearch)
+                .setParameter("search", "%" + txtSearch + "%")
                 .getResultList();
         return result;
     }
 
+    @Path("/searchFoodByLikeName/{txtSearch}")
+    @GET
+    @Produces({MediaType.APPLICATION_XML + "; charset=UTF-8", MediaType.APPLICATION_JSON + "; charset=UTF-8"})
+    public List<Material> searchFoodByLikeNameWithParameter(@PathParam("txtSearch") String txtSearch) {
+        System.out.println(txtSearch);
+        if (txtSearch.equalsIgnoreCase("empty")) {
+            return super.findRange(new int[]{0, 99});
+        }
+        List<Material> result = (List<Material>) getEntityManager()
+                .createQuery("SELECT m FROM Material m Where m.foodname LIKE :search")
+                .setParameter("search", "%" + txtSearch + "%")
+                .getResultList();
+        return result;
+    }
 }
